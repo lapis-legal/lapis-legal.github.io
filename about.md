@@ -39,31 +39,19 @@ What sets Lapis Legal AI apart is our specialized approach to legal AI:
 
 <div class="team-grid">
   <div class="team-member">
-    <img src="../assets/images/team/sarah-chen.jpg" alt="Sarah Chen">
+    <!-- <img src="../assets/images/team/sarah-chen.jpg" alt="Sarah Chen">
     <h3>Sarah Chen, JD</h3>
     <p>CEO & Co-Founder</p>
-    <p>Former litigation partner with 15 years of experience and legal tech innovator</p>
+    <p>Former litigation partner with 15 years of experience and legal tech innovator</p> -->
   </div>
   
   <div class="team-member">
-    <img src="../assets/images/team/michael-rodriguez.jpg" alt="Michael Rodriguez">
-    <h3>Michael Rodriguez, PhD</h3>
-    <p>CTO & Co-Founder</p>
-    <p>AI researcher specializing in NLP and document understanding systems</p>
   </div>
   
   <div class="team-member">
-    <img src="../assets/images/team/james-washington.jpg" alt="James Washington">
-    <h3>James Washington, JD</h3>
-    <p>Chief Legal Officer</p>
-    <p>Former general counsel with expertise in legal technology compliance</p>
   </div>
   
   <div class="team-member">
-    <img src="../assets/images/team/rebecca-kim.jpg" alt="Rebecca Kim">
-    <h3>Rebecca Kim</h3>
-    <p>Chief Product Officer</p>
-    <p>Legal tech product leader with experience at major legal service providers</p>
   </div>
 </div>
 
