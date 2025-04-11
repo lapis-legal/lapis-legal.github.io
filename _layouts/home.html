@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="hero-section">
+  <div class="container">
+    {{ content }}
+  </div>
+</div>
+
+{% if site.data.testimonials %}
+<section class="testimonials-section">
+  <div class="container">
+    <h2 class="section-title">What Our Clients Say</h2>
+    {% include testimonials.html %}
+  </div>
+</section>
+{% endif %}
+
+{% include call-to-action.html 
+  title="Ready to Transform Your Legal Practice?"
+  description="Experience the power of AI in legal case management. Schedule a personalized demo today."
+  button_text="Request Demo"
+  button_url="/contact"
+%}
