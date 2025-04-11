@@ -1,0 +1,29 @@
+// Colors
+$primary-color: #2C3E50;
+$secondary-color: #3498DB;
+$accent-color: #E74C3C;
+$text-color: #333333;
+$light-text: #FFFFFF;
+$light-bg: #F8F9FA;
+$dark-bg: #1A242F;
+$border-color: #E1E4E8;
+
+// Typography
+$base-font-family: 'Open Sans', sans-serif;
+$heading-font-family: 'Montserrat', sans-serif;
+$code-font-family: 'Source Code Pro', monospace;
+
+// Spacing
+$spacing-unit: 30px;
+$content-width: 1200px;
+
+// Breakpoints
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+$large-desktop: 1440px;
+
+// Other
+$border-radius: 4px;
+$box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+$transition: all 0.3s ease;
