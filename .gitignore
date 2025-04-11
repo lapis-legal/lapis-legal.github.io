@@ -3,3 +3,8 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# Development resources
+planning-material/
+raw-material/
+site-implementation-guide.md
