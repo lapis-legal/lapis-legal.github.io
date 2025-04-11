@@ -1,0 +1,14 @@
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-content">
+      <h2>{{ include.title }}</h2>
+      <p>{{ include.description }}</p>
+      <div class="cta-buttons">
+        <a href="{{ include.button_url | relative_url }}" class="btn btn-primary btn-lg">{{ include.button_text }}</a>
+        {% if include.secondary_button_text and include.secondary_button_url %}
+        <a href="{{ include.secondary_button_url | relative_url }}" class="btn btn-secondary btn-lg">{{ include.secondary_button_text }}</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,26 @@
+<header class="site-header">
+  <div class="container">
+    <div class="header-content">
+      <div class="site-logo">
+        <a href="{{ '/' | relative_url }}">
+          <!-- Logo will be styled by CSS if image is not available -->
+          <img src="{{ '/assets/images/logo.svg' | relative_url }}" alt="{{ site.title }}">
+          <span class="site-title">{{ site.title }}</span>
+        </a>
+      </div>
+      
+      <button class="menu-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      {% include navigation.html %}
+      
+      <div class="header-actions">
+        <a href="/contact" class="btn btn-outline">Contact Us</a>
+        <a href="/contact" class="btn btn-primary">Request Demo</a>
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,70 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="{{ '/assets/images/logo.svg' | relative_url }}" alt="{{ site.title }}" class="footer-logo">
+        <p>Revolutionary AI-powered legal technology that drastically reduces the time and effort required to process and analyze legal cases.</p>
+        <div class="social-links">
+          {% if site.twitter_username %}
+          <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+          {% endif %}
+          {% if site.linkedin_username %}
+          <a href="https://linkedin.com/{{ site.linkedin_username }}" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+          {% endif %}
+          {% if site.facebook_username %}
+          <a href="https://facebook.com/{{ site.facebook_username }}" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+          {% endif %}
+          {% if site.github_username %}
+          <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+          {% endif %}
+        </div>
+      </div>
+      
+      <div class="footer-nav">
+        <div class="footer-nav-column">
+          <h3>Product</h3>
+          <ul>
+            <li><a href="{{ '/features' | relative_url }}">Features</a></li>
+            <li><a href="{{ '/demos' | relative_url }}">Demos</a></li>
+            <li><a href="{{ '/pricing' | relative_url }}">Pricing</a></li>
+            <li><a href="{{ '/glossary' | relative_url }}">Glossary</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-nav-column">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="{{ '/about' | relative_url }}">About Us</a></li>
+            <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
+            <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+            <li><a href="/careers">Careers</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-nav-column">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="/documentation">Documentation</a></li>
+            <li><a href="/support">Support</a></li>
+            <li><a href="/api">API</a></li>
+            <li><a href="/webinars">Webinars</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-nav-column">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="/terms">Terms of Service</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/security">Security</a></li>
+            <li><a href="/compliance">Compliance</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; {{ site.time | date: '%Y' }} Lapis Legal AI. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
