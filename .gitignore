@@ -8,3 +8,5 @@ vendor
 planning-material/
 raw-material/
 site-implementation-guide.md
+
+Gemfile.lock
