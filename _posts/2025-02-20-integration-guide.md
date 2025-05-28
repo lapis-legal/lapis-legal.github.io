@@ -37,32 +37,26 @@ Lapis Legal AI offers bidirectional synchronization with Clio:
 **Implementation example:**
 
 ```python
-# Example: Connect Lapis Legal AI to Clio
-from lapis_legal import LapisAPI
-from lapis_integrations import ClioConnector
+# Example: Using Lapis Legal Python SDK
+from lapis_legal import DocumentExtractor, LegalDocumentPipeline
 
-# Initialize the Lapis API client
-lapis_client = LapisAPI(api_key="your_api_key")
+# Initialize with your API key
+api_key = "your_anthropic_api_key"
+extractor = DocumentExtractor(api_key)
 
-# Configure the Clio connector
-clio_connector = ClioConnector(
-    client_id="your_clio_client_id",
-    client_secret="your_clio_client_secret",
-    redirect_uri="https://your-app.example.com/callback"
+# Extract facts from a legal document
+result = extractor.extract_from_pdf(
+    pdf_path="deposition.pdf",
+    prompt_type="facts"  # or "entities", "timeline", "contradictions", etc.
 )
 
-# Authenticate with Clio (OAuth flow)
-auth_url = clio_connector.get_authorization_url()
-# Redirect user to auth_url to authorize access
-
-# After authorization, exchange code for tokens
-clio_connector.exchange_code_for_tokens(auth_code)
-
-# Link the connector to Lapis Legal
-lapis_client.register_connector(clio_connector)
-
-# Start the initial synchronization
-sync_job = lapis_client.start_connector_sync("clio")
+# Or use the full pipeline for comprehensive analysis
+pipeline = LegalDocumentPipeline(api_key)
+results = pipeline.process_document(
+    pdf_path="case_documents.pdf",
+    split_stacked=True,  # Auto-split stacked PDFs
+    extract_types=["facts", "entities", "timeline", "contradictions"]
+)
 ```
 
 ### MyCase Integration
@@ -111,48 +105,64 @@ Lapis Legal AI enhances Relativity workflows through:
 
 Here are some common custom integration patterns:
 
-#### 1. Case Management Integration
+#### 1. Authentication & Case Management
 
 ```python
-# Create a new case in Lapis Legal AI from your system
-response = requests.post(
-    "https://api.lapislegai.ai/v1/cases",
-    headers={"Authorization": "Bearer your_api_key"},
+# First, authenticate to get JWT token
+auth_response = requests.post(
+    "http://localhost:8000/api/v1/auth/login",
     json={
-        "case_name": "Smith v. Acme Corp",
-        "case_number": "CV-2025-12345",
-        "practice_area": "personal_injury",
-        "external_id": "your_system_case_id_123"
+        "email": "user@example.com",
+        "password": "your_password"
     }
 )
+token = auth_response.json()["access_token"]
+
+# Create a new case
+response = requests.post(
+    "http://localhost:8000/api/v1/cases",
+    headers={"Authorization": f"Bearer {token}"},
+    json={
+        "name": "Smith v. Acme Corp",
+        "description": "Personal injury case",
+        "case_number": "CV-2025-12345"
+    }
+)
+case_id = response.json()["id"]
 ```
 
 #### 2. Document Upload and Analysis
 
 ```python
-# Upload a document and trigger analysis
-doc_response = requests.post(
-    "https://api.lapislegai.ai/v1/documents",
-    headers={"Authorization": "Bearer your_api_key"},
-    files={"file": open("deposition.pdf", "rb")},
-    data={
-        "case_id": "lapis_case_id_456",
-        "document_type": "deposition",
-        "document_date": "2025-01-15"
-    }
-)
+# Upload a document to a case
+with open("deposition.pdf", "rb") as f:
+    doc_response = requests.post(
+        f"http://localhost:8000/api/v1/documents/upload/{case_id}",
+        headers={"Authorization": f"Bearer {token}"},
+        files={"file": f}
+    )
+document_id = doc_response.json()["id"]
 
-# Get the document ID from the response
-document_id = doc_response.json()["document_id"]
-
-# Request analysis of the document
+# Request async analysis (returns immediately with task ID)
 analysis_response = requests.post(
-    f"https://api.lapislegai.ai/v1/documents/{document_id}/analyze",
-    headers={"Authorization": "Bearer your_api_key"},
+    f"http://localhost:8000/api/v1/analysis/analyze/{document_id}",
+    headers={"Authorization": f"Bearer {token}"},
     json={
-        "analysis_types": ["entity_extraction", "fact_extraction", "contradiction_detection"]
+        "extraction_types": ["facts", "entities", "timeline", "contradictions"]
     }
 )
+task_id = analysis_response.json()["task_id"]
+
+# Check task status
+status_response = requests.get(
+    f"http://localhost:8000/api/v1/tasks/{task_id}",
+    headers={"Authorization": f"Bearer {token}"}
+)
+print(f"Status: {status_response.json()['status']}")
+
+# When complete, get results
+if status_response.json()["status"] == "completed":
+    results = status_response.json()["result"]
 ```
 
 #### 3. Webhook Configuration

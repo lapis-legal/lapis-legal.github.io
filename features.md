@@ -15,26 +15,34 @@ Lapis Legal AI is a revolutionary AI-powered legal technology platform that leve
 
 ## Core AI Technology
 
-### Legal-Specific AI Models
+### Powered by Claude AI
 
-Our proprietary AI engine powers all Lapis Legal features with models specifically designed for legal applications:
+Lapis Legal leverages Anthropic's Claude AI for superior legal document understanding:
 
-- **AI Engine**: The core technology powering all features.
-- **Legal-Tailored LLMs**: Trained on millions of legal documents for superior understanding of legal context, terminology, citations, and structure.
-- **Jurisdiction-Specific Training**: Models adapted for different legal jurisdictions and practice areas.
-- **Performance Metrics**: 15-20% higher accuracy than general-purpose AI for legal documents.
-- **Continuous Learning**: Models that improve based on user feedback and interaction.
+- **Native PDF Processing**: Direct analysis of PDFs without OCR conversion, preserving formatting and context
+- **40,000 Token Output**: Claude Sonnet 4's extended output capability for comprehensive analysis
+- **Legal Context Understanding**: Advanced comprehension of legal terminology, citations, and document structure
+- **Multi-Document Analysis**: Ability to process and correlate information across multiple documents
+- **High Accuracy**: 80.82% test coverage ensures reliable extraction and analysis
 
 ### Document Analysis Capabilities
 
 Transform how you process and analyze legal documents:
 
-- **Specialized Legal OCR**: Optimized for legal formatting and terminology with 10-15% higher accuracy than general OCR.
-- **Structure Recognition**: Automatic identification of document sections, clauses, and legal frameworks.
-- **Entity Extraction**: Precise identification of people, organizations, locations, and legal entities.
-- **Fact Extraction**: Automated discovery and categorization of key facts from documents.
-- **Table and Form Extraction**: Optimized extraction for legal forms and tables.
-- **Multi-Language Support**: Processing for 30+ languages with specialized legal dictionaries.
+- **Native PDF Processing**: Analyze PDFs directly without OCR, maintaining document integrity
+- **Smart Document Splitting**: Automatically detect and split stacked PDFs by identifying document boundaries
+- **9 Extraction Types**: Comprehensive analysis including:
+  - Facts with entities and timeline
+  - Legal entities (people, organizations, locations)
+  - Timeline events with chronological ordering
+  - Contradictions and inconsistencies
+  - Legal assertions and claims
+  - Evidence gaps identification
+  - Source references and citations
+  - Case intelligence and strategic insights
+  - Document classification and metadata
+- **Batch Processing**: Process multiple documents efficiently in parallel
+- **File Size Support**: Handle PDFs up to 32MB and 100 pages (auto-chunking for larger files)
 
 ### Contradiction Detection
 
@@ -252,11 +260,14 @@ Seamlessly connect with your existing legal tech stack:
 
 Build custom solutions and workflows:
 
-- **Comprehensive RESTful API**: Complete API access to all platform features.
-- **Event-Driven Architecture (Webhooks)**: Real-time notifications for system events to trigger workflows.
-- **Flexible Deployment Options**: Cloud (SaaS), private cloud, or on-premises deployment.
-- **Containerization**: Docker and Kubernetes support for deployment flexibility.
-- **GraphQL Support**: Optional flexible data querying capabilities.
+- **RESTful API**: FastAPI-powered endpoints for all platform features
+- **JWT Authentication**: Secure token-based authentication with refresh tokens
+- **Async Processing**: Celery + Redis for background document processing
+- **File Storage Options**: Local filesystem or S3-compatible storage backends
+- **Rate Limiting**: Built-in API rate limiting for stability
+- **Comprehensive Security**: File validation, SQL injection protection, bcrypt password hashing
+- **Database Support**: PostgreSQL with SQLAlchemy 2.0 (async support)
+- **CLI Tools**: Command-line interface for batch processing and automation
 
 ---
 
@@ -284,15 +295,20 @@ Uphold the highest ethical standards:
 
 ---
 
-## ROI & Performance Metrics
+## Performance & Technical Specifications
 
-Transform your legal practice with measurable results:
+### Processing Performance
+- **Single Extraction Speed**: ~84 seconds for a 49-page PDF
+- **Parallel Processing**: Support for multiple extraction types simultaneously
+- **File Size Limits**: 32MB maximum, 100 pages per PDF
+- **Token Usage**: Leverages Claude's 40K token output capability
+- **API Response**: Async processing with status monitoring
 
-- **70-90% reduction** in document processing and review time
-- **80-95% reduction** in manual data entry errors
-- **3-5x improvement** in staff efficiency and productivity
-- **2-4x improvement** in case throughput and handling capacity
-- **10-50x improvement** in document processing speed compared to manual methods
+### System Reliability
+- **Test Coverage**: 80.82% code coverage
+- **Security**: Comprehensive file validation and authentication
+- **Scalability**: Celery workers for distributed processing
+- **Storage**: Flexible backend support (local/S3)
 
 ---
 

@@ -32,15 +32,15 @@ We believe in:
     <div class="pricing-features">
       <ul>
         <li>✅ Document Analysis (up to 1,000 pages/month)</li>
-        <li>✅ Case Intelligence Dashboard</li>
-        <li>✅ Timeline Analysis</li>
-        <li>✅ Document Management</li>
-        <li>✅ Basic Contradiction Detection</li>
+        <li>✅ 5 Extraction Types (facts, entities, timeline, contradictions, documents)</li>
+        <li>✅ Smart PDF Splitting</li>
+        <li>✅ Case Management</li>
         <li>✅ 10GB Document Storage</li>
+        <li>✅ Web Interface Access</li>
         <li>✅ Email Support</li>
-        <li>❌ Deposition Wizard</li>
-        <li>❌ Advanced Analytics</li>
         <li>❌ API Access</li>
+        <li>❌ Batch Processing</li>
+        <li>❌ Custom Extraction Types</li>
       </ul>
     </div>
     <div class="pricing-cta">

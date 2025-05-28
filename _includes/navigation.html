@@ -2,6 +2,7 @@
   <ul class="nav-menu">
     <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
     <li><a href="{{ '/features' | relative_url }}" {% if page.url == '/features/' %}class="active"{% endif %}>Features</a></li>
+    <li><a href="{{ '/technical-specs' | relative_url }}" {% if page.url == '/technical-specs/' %}class="active"{% endif %}>Technical Specs</a></li>
     <li><a href="{{ '/demos' | relative_url }}" {% if page.url == '/demos/' %}class="active"{% endif %}>Demos</a></li>
     <li><a href="{{ '/pricing' | relative_url }}" {% if page.url == '/pricing/' %}class="active"{% endif %}>Pricing</a></li>
     <li><a href="{{ '/blog' | relative_url }}" {% if page.url == '/blog/' or page.layout == 'post' %}class="active"{% endif %}>Blog</a></li>
