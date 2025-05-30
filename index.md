@@ -45,8 +45,8 @@ Lapis Legal AI is a groundbreaking platform that leverages advanced Large Langua
   </li>
 </ul>
 
-[Schedule a Demo](#){: .btn .btn-primary}
-[Explore Features](#){: .btn .btn-secondary}
+[Schedule a Demo](/contact){: .btn .btn-primary}
+[Explore Features](/features){: .btn .btn-secondary}
 
 ---
 
@@ -116,5 +116,5 @@ Identify inconsistencies across documents and testimony with our cross-document 
 
 Experience the power of AI in legal case management. Schedule a personalized demo today.
 
-[Request Demo](#){: .btn .btn-primary .btn-lg}
+[Request Demo](/contact){: .btn .btn-primary .btn-lg}
 [View Pricing](/pricing){: .btn .btn-secondary .btn-lg}
