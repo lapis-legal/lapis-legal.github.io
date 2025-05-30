@@ -346,11 +346,27 @@
       margin: 0;
       
       li {
+        display: flex;
+        align-items: flex-start;
         padding: 1rem 0;
+        margin-bottom: 0;
         border-bottom: 1px solid $border-color;
         
         &:last-child {
           border-bottom: none;
+        }
+        
+        .check-icon {
+          flex: 0 0 auto;
+          margin-right: 1rem;
+          font-size: 1.4rem;
+          line-height: 1.6;
+          min-width: 2rem;
+        }
+        
+        .feature-text {
+          flex: 1;
+          line-height: 1.6;
         }
       }
     }
@@ -549,6 +565,48 @@
       color: $light-text;
       text-decoration: none;
       border-color: $secondary-color;
+    }
+  }
+}
+
+/* Feature Table Styling */
+.feature-table {
+  margin: 3rem 0;
+  overflow-x: auto;
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: $light-text;
+    border-radius: $border-radius;
+    overflow: hidden;
+    box-shadow: $box-shadow;
+    
+    th, td {
+      padding: 1.5rem;
+      text-align: left;
+      border-bottom: 1px solid $border-color;
+      
+      &:first-child {
+        font-weight: 600;
+        color: $primary-color;
+      }
+    }
+    
+    th {
+      background-color: darken($light-bg, 2%);
+      font-weight: 600;
+      color: $primary-color;
+    }
+    
+    tr:last-child {
+      td {
+        border-bottom: none;
+      }
+    }
+    
+    tr:hover {
+      background-color: darken($light-bg, 1%);
     }
   }
 }

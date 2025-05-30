@@ -57,10 +57,77 @@ a {
 ul, ol {
   margin-top: 0;
   margin-bottom: 2.5rem;
-  padding-left: 2rem;
+  padding-left: 0;
   
   li {
     margin-bottom: 1rem;
+    padding-left: 2rem;
+    position: relative;
+  }
+}
+
+/* Feature Lists with Better Alignment */
+.feature-list {
+  list-style: none;
+  padding-left: 0;
+  
+  li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    padding-left: 0;
+    
+    .feature-icon {
+      flex: 0 0 auto;
+      margin-right: 1.2rem;
+      font-weight: 600;
+      color: $secondary-color;
+      min-width: 2rem;
+      line-height: 1.6;
+    }
+    
+    .feature-content {
+      flex: 1;
+      
+      .feature-title {
+        font-weight: 600;
+        color: $primary-color;
+        margin-bottom: 0.3rem;
+      }
+      
+      .feature-description {
+        margin-bottom: 0;
+        color: $text-color;
+      }
+    }
+  }
+}
+
+/* Philosophy List Styling */
+.philosophy-list {
+  list-style: none;
+  padding-left: 0;
+  
+  li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    padding-left: 0;
+    
+    strong {
+      flex: 0 0 auto;
+      color: $primary-color;
+      margin-right: 0.5rem;
+      min-width: fit-content;
+    }
+    
+    &::before {
+      content: "•";
+      color: $secondary-color;
+      font-weight: bold;
+      margin-right: 1rem;
+      flex: 0 0 auto;
+    }
   }
 }
 

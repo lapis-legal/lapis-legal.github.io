@@ -15,10 +15,12 @@ Lapis Legal AI offers flexible pricing options designed to meet the needs of leg
 
 We believe in:
 
-- **Transparent pricing** with no hidden fees
-- **Scalable solutions** that grow with your practice
-- **Value-based pricing** that delivers clear ROI
-- **Flexible options** to meet diverse needs
+<ul class="philosophy-list">
+  <li><strong>Transparent pricing</strong> with no hidden fees</li>
+  <li><strong>Scalable solutions</strong> that grow with your practice</li>
+  <li><strong>Value-based pricing</strong> that delivers clear ROI</li>
+  <li><strong>Flexible options</strong> to meet diverse needs</li>
+</ul>
 
 ## Choose the Right Plan for Your Practice
 
@@ -31,16 +33,16 @@ We believe in:
     </div>
     <div class="pricing-features">
       <ul>
-        <li>✅ Document Analysis (up to 1,000 pages/month)</li>
-        <li>✅ 5 Extraction Types (facts, entities, timeline, contradictions, documents)</li>
-        <li>✅ Smart PDF Splitting</li>
-        <li>✅ Case Management</li>
-        <li>✅ 10GB Document Storage</li>
-        <li>✅ Web Interface Access</li>
-        <li>✅ Email Support</li>
-        <li>❌ API Access</li>
-        <li>❌ Batch Processing</li>
-        <li>❌ Custom Extraction Types</li>
+        <li><span class="check-icon">✅</span><span class="feature-text">Document Analysis (up to 1,000 pages/month)</span></li>
+        <li><span class="check-icon">✅</span><span class="feature-text">5 Extraction Types (facts, entities, timeline, contradictions, documents)</span></li>
+        <li><span class="check-icon">✅</span><span class="feature-text">Smart PDF Splitting</span></li>
+        <li><span class="check-icon">✅</span><span class="feature-text">Case Management</span></li>
+        <li><span class="check-icon">✅</span><span class="feature-text">10GB Document Storage</span></li>
+        <li><span class="check-icon">✅</span><span class="feature-text">Web Interface Access</span></li>
+        <li><span class="check-icon">✅</span><span class="feature-text">Email Support</span></li>
+        <li><span class="check-icon">❌</span><span class="feature-text">API Access</span></li>
+        <li><span class="check-icon">❌</span><span class="feature-text">Batch Processing</span></li>
+        <li><span class="check-icon">❌</span><span class="feature-text">Custom Extraction Types</span></li>
       </ul>
     </div>
     <div class="pricing-cta">
@@ -56,19 +58,19 @@ We believe in:
     </div>
     <div class="pricing-features">
       <ul>
-        <li>✅ Document Analysis (up to 5,000 pages/month)</li>
-        <li>✅ Case Intelligence Dashboard</li>
-        <li>✅ Timeline Analysis</li>
-        <li>✅ Document Management</li>
-        <li>✅ Advanced Contradiction Detection</li>
-        <li>✅ 50GB Document Storage</li>
-        <li>✅ Priority Support</li>
-        <li>✅ Deposition Wizard</li>
-        <li>✅ Settlement Analysis Tools</li>
-        <li>✅ Basic API Access</li>
-        <li>✅ Transcript Analysis</li>
-        <li>❌ Custom Workflows</li>
-        <li>❌ Enterprise Integrations</li>
+        <li><span class="check-icon">✅</span><span class="feature-text">Document Analysis (up to 5,000 pages/month)</span></li>
+        <li><span class="check-icon">✅</span><span class="feature-text">Case Intelligence Dashboard</span></li>
+        <li><span class="check-icon">✅</span><span class="feature-text">Timeline Analysis</span></li>
+        <li><span class="check-icon">✅</span><span class="feature-text">Document Management</span></li>
+        <li><span class="check-icon">✅</span><span class="feature-text">Advanced Contradiction Detection</span></li>
+        <li><span class="check-icon">✅</span><span class="feature-text">50GB Document Storage</span></li>
+        <li><span class="check-icon">✅</span><span class="feature-text">Priority Support</span></li>
+        <li><span class="check-icon">✅</span><span class="feature-text">Deposition Wizard</span></li>
+        <li><span class="check-icon">✅</span><span class="feature-text">Settlement Analysis Tools</span></li>
+        <li><span class="check-icon">✅</span><span class="feature-text">Basic API Access</span></li>
+        <li><span class="check-icon">✅</span><span class="feature-text">Transcript Analysis</span></li>
+        <li><span class="check-icon">❌</span><span class="feature-text">Custom Workflows</span></li>
+        <li><span class="check-icon">❌</span><span class="feature-text">Enterprise Integrations</span></li>
       </ul>
     </div>
     <div class="pricing-cta">
@@ -84,18 +86,18 @@ We believe in:
     </div>
     <div class="pricing-features">
       <ul>
-        <li>✅ Unlimited Document Analysis</li>
-        <li>✅ All Platform Features</li>
-        <li>✅ Unlimited Document Storage</li>
-        <li>✅ Dedicated Account Manager</li>
-        <li>✅ 24/7 Priority Support</li>
-        <li>✅ Custom AI Model Training</li>
-        <li>✅ Full API Access</li>
-        <li>✅ Custom Integrations</li>
-        <li>✅ On-Premises Deployment Option</li>
-        <li>✅ Advanced Security Controls</li>
-        <li>✅ Custom Workflows</li>
-        <li>✅ SSO & Enterprise Authentication</li>
+        <li><span class="check-icon">✅</span><span class="feature-text">Unlimited Document Analysis</span></li>
+        <li><span class="check-icon">✅</span><span class="feature-text">All Platform Features</span></li>
+        <li><span class="check-icon">✅</span><span class="feature-text">Unlimited Document Storage</span></li>
+        <li><span class="check-icon">✅</span><span class="feature-text">Dedicated Account Manager</span></li>
+        <li><span class="check-icon">✅</span><span class="feature-text">24/7 Priority Support</span></li>
+        <li><span class="check-icon">✅</span><span class="feature-text">Custom AI Model Training</span></li>
+        <li><span class="check-icon">✅</span><span class="feature-text">Full API Access</span></li>
+        <li><span class="check-icon">✅</span><span class="feature-text">Custom Integrations</span></li>
+        <li><span class="check-icon">✅</span><span class="feature-text">On-Premises Deployment Option</span></li>
+        <li><span class="check-icon">✅</span><span class="feature-text">Advanced Security Controls</span></li>
+        <li><span class="check-icon">✅</span><span class="feature-text">Custom Workflows</span></li>
+        <li><span class="check-icon">✅</span><span class="feature-text">SSO & Enterprise Authentication</span></li>
       </ul>
     </div>
     <div class="pricing-cta">
