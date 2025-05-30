@@ -7,7 +7,7 @@ permalink: /pricing/
 
 # Pricing Plans
 
-![Lapis Legal AI Pricing](../assets/images/pricing-banner.jpg)
+![Lapis Legal AI Pricing](../assets/images/pricing-banner.png)
 
 Lapis Legal AI offers flexible pricing options designed to meet the needs of legal organizations of all sizes—from solo practitioners to large firms and corporate legal departments.
 

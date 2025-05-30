@@ -7,7 +7,7 @@ permalink: /contact/
 
 # Contact Lapis Legal AI
 
-![Contact Lapis Legal AI](../assets/images/contact-banner.jpg)
+![Contact Lapis Legal AI](../assets/images/contact-banner.png)
 
 We're excited to hear from you and discuss how Lapis Legal AI can transform your legal practice. Whether you're interested in scheduling a demo, have questions about our platform, or want to discuss partnership opportunities, our team is here to help.
 

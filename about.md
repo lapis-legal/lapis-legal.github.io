@@ -7,7 +7,7 @@ permalink: /about/
 
 # About Lapis Legal AI
 
-![Lapis Legal AI Team](../assets/images/about-banner.jpg)
+![Lapis Legal AI Team](../assets/images/about-banner.png)
 
 ## Our Mission
 

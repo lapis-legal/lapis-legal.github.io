@@ -7,7 +7,7 @@ permalink: /demos/
 
 # Lapis Legal AI in Action: Demonstration Scenarios
 
-![Lapis Legal AI Demonstrations](../assets/images/demos-banner.jpg)
+![Lapis Legal AI Demonstrations](../assets/images/demos-banner.png)
 
 ## Overview
 
