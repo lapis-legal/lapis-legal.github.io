@@ -285,10 +285,29 @@
   &.featured {
     transform: scale(1.05);
     border-color: $secondary-color;
+    border-width: 2px;
+    box-shadow: 0 10px 30px rgba($secondary-color, 0.2);
     z-index: 1;
+    position: relative;
     
     @media (max-width: $tablet) {
       transform: none;
+    }
+    
+    &::before {
+      content: "Most Popular";
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $secondary-color;
+      color: $light-text;
+      padding: 0.5rem 1.5rem;
+      border-radius: 20px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
     
     .pricing-header {
@@ -302,6 +321,7 @@
     
     &:hover {
       transform: scale(1.05) translateY(-5px);
+      box-shadow: 0 15px 40px rgba($secondary-color, 0.3);
       
       @media (max-width: $tablet) {
         transform: translateY(-5px);

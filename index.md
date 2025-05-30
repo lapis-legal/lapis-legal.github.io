@@ -6,7 +6,7 @@ description: "Lapis Legal AI uses cutting-edge LLMs to drastically lower the tim
 
 # Transform Your Legal Practice with AI
 
-![Lapis Legal AI Platform](assets/images/lapis-banner.jpg)
+![Lapis Legal AI Platform](/assets/images/lapis-banner.jpg)
 
 ## Revolutionary Legal Case Management Powered by AI
 

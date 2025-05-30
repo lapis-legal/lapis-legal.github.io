@@ -121,6 +121,7 @@
     
     @media (max-width: $tablet) {
       flex-direction: column;
+      padding: 1rem 0;
     }
     
     li {
@@ -129,7 +130,11 @@
       
       @media (max-width: $tablet) {
         margin: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 0.8rem;
+        
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
     
