@@ -82,8 +82,14 @@ ul, ol {
       margin-right: 1.2rem;
       font-weight: 600;
       color: $secondary-color;
-      min-width: 2rem;
+      min-width: 2.5rem;
       line-height: 1.6;
+      font-size: 1.8rem;
+      
+      @media (max-width: $mobile) {
+        font-size: 1.6rem;
+        min-width: 2rem;
+      }
     }
     
     .feature-content {
