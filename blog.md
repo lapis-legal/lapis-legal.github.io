@@ -7,7 +7,7 @@ permalink: /blog/
 
 # Lapis Legal AI Blog
 
-![Lapis Legal AI Blog](../assets/images/blog-banner.jpg)
+![Lapis Legal AI Blog](../assets/images/blog-banner.png)
 
 Stay up-to-date with the latest insights, trends, and best practices in legal technology and AI. Our blog features thought leadership articles, case studies, and practical tips to help legal professionals leverage AI for better outcomes.
 

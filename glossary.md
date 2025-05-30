@@ -7,7 +7,7 @@ permalink: /glossary/
 
 # Lapis Legal AI Terminology Glossary
 
-![Lapis Legal AI Glossary](../assets/images/glossary-banner.jpg)
+![Lapis Legal AI Glossary](../assets/images/glossary-banner.png)
 
 This glossary provides definitions for specialized terms used in the Lapis Legal AI platform, including legal technology concepts, AI terminology, and platform-specific features.
 

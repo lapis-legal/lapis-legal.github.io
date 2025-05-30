@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__brave-search__brave_web_search",
+      "mcp__fetch__fetch",
+      "mcp__gemini-search__search",
+      "mcp__jira-server__get_issues",
+      "mcp__python-docs-server__get_python_docs",
+      "mcp__ragdocs__extract_urls",
+      "mcp__ragdocs__list_sources",
+      "mcp__ragdocs__run_queue",
+      "mcp__ragdocs__search_documentation"
+    ],
+    "deny": []
+  }
+}
