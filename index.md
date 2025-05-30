@@ -14,10 +14,36 @@ Lapis Legal AI is a groundbreaking platform that leverages advanced Large Langua
 
 ### Unlock the Power of AI in Your Legal Workflow
 
-- **Native PDF Processing** - Analyze documents directly without OCR conversion
-- **9 Extraction Types** - Comprehensive analysis from facts to contradictions
-- **Smart Document Splitting** - Automatically separate stacked PDFs
-- **Enterprise Security** - JWT auth, file validation, and encrypted storage
+<ul class="feature-list">
+  <li>
+    <span class="feature-icon">📄</span>
+    <div class="feature-content">
+      <div class="feature-title">Native PDF Processing</div>
+      <div class="feature-description">Analyze documents directly without OCR conversion</div>
+    </div>
+  </li>
+  <li>
+    <span class="feature-icon">🔍</span>
+    <div class="feature-content">
+      <div class="feature-title">9 Extraction Types</div>
+      <div class="feature-description">Comprehensive analysis from facts to contradictions</div>
+    </div>
+  </li>
+  <li>
+    <span class="feature-icon">✂️</span>
+    <div class="feature-content">
+      <div class="feature-title">Smart Document Splitting</div>
+      <div class="feature-description">Automatically separate stacked PDFs</div>
+    </div>
+  </li>
+  <li>
+    <span class="feature-icon">🔒</span>
+    <div class="feature-content">
+      <div class="feature-title">Enterprise Security</div>
+      <div class="feature-description">JWT auth, file validation, and encrypted storage</div>
+    </div>
+  </li>
+</ul>
 
 [Schedule a Demo](#){: .btn .btn-primary}
 [Explore Features](#){: .btn .btn-secondary}
