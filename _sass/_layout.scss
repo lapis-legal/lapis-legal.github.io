@@ -27,8 +27,10 @@ body.menu-open {
     flex-wrap: wrap;
     
     @media (max-width: $tablet) {
-      flex-direction: column;
-      align-items: flex-start;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
     }
   }
   
@@ -49,8 +51,17 @@ body.menu-open {
     }
     
     img {
-      height: 4rem;
+      height: 5rem;
       margin-right: 1rem;
+      transition: $transition;
+      
+      @media (max-width: $tablet) {
+        height: 4rem;
+      }
+      
+      &:hover {
+        transform: scale(1.05);
+      }
     }
     
     .site-title {
@@ -65,9 +76,7 @@ body.menu-open {
     gap: 1rem;
     
     @media (max-width: $tablet) {
-      margin-top: 1.5rem;
-      width: 100%;
-      justify-content: center;
+      display: none;
     }
   }
   
@@ -127,10 +136,14 @@ body.menu-open {
     align-items: center;
     justify-content: center;
     transform: translateX(-100%);
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
     
     &.active {
       transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
     }
   }
   
@@ -144,8 +157,9 @@ body.menu-open {
       flex-direction: column;
       align-items: center;
       gap: 2rem;
-      padding: 2rem 0;
+      padding: 2rem 0 4rem;
       text-align: center;
+      width: 100%;
     }
     
     li {
@@ -186,6 +200,26 @@ body.menu-open {
         &:after {
           width: 100%;
         }
+      }
+    }
+  }
+  
+  .mobile-actions {
+    display: none;
+    
+    @media (max-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 2rem;
+      width: 100%;
+      max-width: 30rem;
+      
+      .btn {
+        width: 100%;
+        text-align: center;
+        padding: 1.5rem 2rem;
+        font-size: 1.6rem;
       }
     }
   }
@@ -377,23 +411,61 @@ body.menu-open {
     box-shadow: $box-shadow;
     padding: 3rem;
     text-align: center;
-    transition: $transition;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba($secondary-color, 0.08), transparent);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
     
     &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+      
+      &:before {
+        opacity: 1;
+      }
+      
+      .area-icon svg {
+        transform: scale(1.15) rotate(-5deg);
+        color: $secondary-color;
+      }
+    }
+    
+    .area-icon {
+      margin-bottom: 2rem;
+      
+      svg {
+        color: $primary-color;
+        transition: all 0.4s ease;
+        width: 40px;
+        height: 40px;
+      }
     }
     
     h3 {
       margin-bottom: 1.5rem;
       color: $primary-color;
       font-size: 2.2rem;
+      position: relative;
+      z-index: 1;
     }
     
     p {
       line-height: 1.7;
       color: $text-color;
       margin-bottom: 0;
+      position: relative;
+      z-index: 1;
     }
   }
 }
