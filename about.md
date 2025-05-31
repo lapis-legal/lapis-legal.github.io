@@ -37,21 +37,53 @@ What sets Lapis Legal AI apart is our specialized approach to legal AI:
 
 ## Our Leadership Team
 
-<div class="team-grid">
+<div class="leadership-team">
   <div class="team-member">
-    <!-- <img src="../assets/images/team/sarah-chen.jpg" alt="Sarah Chen">
-    <h3>Sarah Chen, JD</h3>
-    <p>CEO & Co-Founder</p>
-    <p>Former litigation partner with 15 years of experience and legal tech innovator</p> -->
+    <div class="member-photo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+        <circle cx="12" cy="7" r="4"></circle>
+      </svg>
+    </div>
+    <h3>Dr. Sarah Mitchell</h3>
+    <p class="member-title">CEO & Co-Founder</p>
+    <p class="member-bio">Former BigLaw partner with 15+ years in legal technology. PhD in Computer Science from Stanford. Led digital transformation at three AmLaw 100 firms.</p>
   </div>
   
   <div class="team-member">
+    <div class="member-photo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+        <circle cx="12" cy="7" r="4"></circle>
+      </svg>
+    </div>
+    <h3>Michael Chen</h3>
+    <p class="member-title">CTO & Co-Founder</p>
+    <p class="member-bio">Former Google AI research scientist with expertise in natural language processing. Led development of large-scale ML systems serving millions of legal professionals.</p>
   </div>
   
   <div class="team-member">
+    <div class="member-photo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+        <circle cx="12" cy="7" r="4"></circle>
+      </svg>
+    </div>
+    <h3>Jennifer Rodriguez</h3>
+    <p class="member-title">VP of Legal Operations</p>
+    <p class="member-bio">20+ years in legal operations across Fortune 500 companies. Expert in legal workflow optimization and technology adoption in enterprise legal departments.</p>
   </div>
   
   <div class="team-member">
+    <div class="member-photo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+        <circle cx="12" cy="7" r="4"></circle>
+      </svg>
+    </div>
+    <h3>David Kim</h3>
+    <p class="member-title">VP of Product</p>
+    <p class="member-bio">Former product leader at LegalZoom and Thomson Reuters. Expert in building user-centric legal technology products with proven track record of successful launches.</p>
   </div>
 </div>
 
@@ -97,7 +129,50 @@ We're just getting started on our mission to transform the legal industry. Wheth
 
 ## Recognition & Awards
 
-- **2024 Legal Technology Trailblazer** - National Law Journal
-- **Top 10 Legal AI Solutions** - Legal Tech Innovation Awards
-- **Best Document Analysis Tool** - LegalTech Breakthrough Awards
-- **AI Excellence Award** - Business Intelligence Group
+<div class="awards-grid">
+  <div class="award-badge">
+    <div class="award-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+      </svg>
+    </div>
+    <h4>2024 Legal Technology Trailblazer</h4>
+    <p>National Law Journal</p>
+  </div>
+  
+  <div class="award-badge">
+    <div class="award-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="8" r="7"></circle>
+        <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"></polyline>
+      </svg>
+    </div>
+    <h4>Top 10 Legal AI Solutions</h4>
+    <p>Legal Tech Innovation Awards</p>
+  </div>
+  
+  <div class="award-badge">
+    <div class="award-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+        <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+        <path d="M4 22h16"></path>
+        <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+        <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+        <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+      </svg>
+    </div>
+    <h4>Best Document Analysis Tool</h4>
+    <p>LegalTech Breakthrough Awards</p>
+  </div>
+  
+  <div class="award-badge">
+    <div class="award-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+      </svg>
+    </div>
+    <h4>AI Excellence Award</h4>
+    <p>Business Intelligence Group</p>
+  </div>
+</div>
