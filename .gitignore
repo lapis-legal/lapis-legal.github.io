@@ -14,3 +14,12 @@ sandbox htm/
 # Prevent large files
 *.zip
 sandbox\ htm/sandbox340/dev/*.zip
+
+# Development
+.claude/
+
+# Screenshots
+screenshot-*.png
+
+# IDE
+.idea/
