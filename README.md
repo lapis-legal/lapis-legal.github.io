@@ -1,6 +1,6 @@
-# Sandbox Jekyll Theme
+# Lapis Legal AI Website
 
-A modern and flexible Jekyll theme based on the Sandbox template.
+A modern Jekyll-based website for Lapis Legal AI, showcasing legal technology solutions.
 
 ## Installation
 
