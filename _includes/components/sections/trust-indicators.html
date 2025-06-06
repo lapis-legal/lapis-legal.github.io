@@ -1,0 +1,20 @@
+<!-- Trust Indicators Section -->
+<section class="wrapper bg-light">
+  <div class="container py-6">
+    <div class="row gx-lg-8 gy-4 text-center">
+      {% for indicator in site.data.metrics.trust_indicators %}
+      <div class="col-6 col-lg-3">
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="icon btn btn-circle btn-lg btn-soft-primary pe-none me-3">
+            <i class="uil uil-{{ indicator.icon }}"></i>
+          </div>
+          <div class="text-start">
+            <h4 class="mb-0">{{ indicator.stat }}</h4>
+            <p class="mb-0 text-body fs-sm">{{ indicator.description }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

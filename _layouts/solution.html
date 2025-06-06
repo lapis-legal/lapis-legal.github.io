@@ -1,0 +1,268 @@
+---
+layout: default
+---
+
+{% assign solution = site.data.solutions.solutions | where: "slug", page.slug | first %}
+
+<div class="wrapper bg-white">
+  <!-- Breadcrumb -->
+  <nav aria-label="breadcrumb" class="pt-4">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/solutions/">Solutions</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="wrapper bg-gradient-primary text-white">
+    <div class="container pt-10 pb-15 pt-md-14 pb-md-20">
+      <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+        <div class="col-lg-6">
+          <div class="badge bg-white text-primary rounded-pill mb-4">
+            {{ page.category | default: "Solution" }}
+          </div>
+          <h1 class="display-2 mb-4 text-white">{{ solution.headline | default: page.title }}</h1>
+          <p class="lead fs-lg mb-6 text-white opacity-8">{{ solution.description | default: page.description }}</p>
+          
+          <!-- Target Audience -->
+          <div class="mb-6">
+            <h5 class="text-white mb-3">Perfect for:</h5>
+            <div class="row gy-2">
+              {% for audience in solution.target_audience %}
+              <div class="col-auto">
+                <span class="badge bg-white text-primary rounded-pill">{{ audience }}</span>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="d-flex flex-row mb-2">
+            <a href="/contact/#demo" class="btn btn-lg btn-white rounded-pill me-2">Request Demo</a>
+            <a href="#benefits" class="btn btn-lg btn-outline-white rounded-pill">Learn More</a>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <!-- Solution Metrics -->
+          <div class="row gy-4">
+            {% for metric in solution.metrics %}
+            <div class="col-sm-6">
+              <div class="card bg-white shadow-lg text-center">
+                <div class="card-body py-4">
+                  <h3 class="display-5 text-primary mb-2">{{ metric.stat }}</h3>
+                  <p class="mb-0 text-muted">{{ metric.description }}</p>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pain Points & Solutions -->
+  <section class="wrapper bg-light" id="benefits">
+    <div class="container py-14 py-md-16">
+      <div class="row gx-lg-8 gx-xl-12">
+        <div class="col-lg-6">
+          <h2 class="fs-15 text-uppercase text-muted mb-3">Challenges We Solve</h2>
+          <h3 class="display-5 mb-6">Common Pain Points</h3>
+          
+          {% for pain_point in solution.pain_points %}
+          <div class="d-flex flex-row mb-4">
+            <div>
+              <div class="icon btn btn-circle btn-lg btn-soft-red pe-none me-4">
+                <i class="uil uil-times"></i>
+              </div>
+            </div>
+            <div>
+              <p class="mb-0">{{ pain_point }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        
+        <div class="col-lg-6">
+          <h2 class="fs-15 text-uppercase text-muted mb-3">Our Solutions</h2>
+          <h3 class="display-5 mb-6">Value Propositions</h3>
+          
+          {% for value_prop in solution.value_propositions %}
+          <div class="d-flex flex-row mb-4">
+            <div>
+              <div class="icon btn btn-circle btn-lg btn-soft-primary pe-none me-4">
+                <i class="uil uil-check"></i>
+              </div>
+            </div>
+            <div>
+              <p class="mb-0">{{ value_prop }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Features -->
+  <section class="wrapper bg-white">
+    <div class="container py-14 py-md-16">
+      <div class="row mb-10">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="fs-15 text-uppercase text-muted mb-3">Core Features</h2>
+          <h3 class="display-5 mb-0">Essential Tools for {{ page.title }}</h3>
+        </div>
+      </div>
+      
+      <div class="row gx-lg-8 gx-xl-12 gy-8">
+        {% for feature_item in solution.key_features %}
+          {% assign feature = site.data.features.features | where: "slug", feature_item.feature | first %}
+          {% if feature %}
+          <div class="col-md-6 col-lg-4">
+            <div class="card shadow-lg h-100">
+              <div class="card-body text-center">
+                <div class="icon btn btn-circle btn-xl btn-soft-primary pe-none mx-auto mb-4">
+                  <i class="uil uil-{{ feature.icon | default: 'cog' }}"></i>
+                </div>
+                <h4 class="mb-3">{{ feature.name }}</h4>
+                <p class="mb-4">{{ feature_item.benefit }}</p>
+                <a href="/features/{{ feature.slug }}/" class="btn btn-outline-primary rounded-pill">Learn More</a>
+              </div>
+            </div>
+          </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies -->
+  {% if solution.case_studies and solution.case_studies.size > 0 %}
+  <section class="wrapper bg-light">
+    <div class="container py-14 py-md-16">
+      <div class="row mb-10">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="fs-15 text-uppercase text-muted mb-3">Success Stories</h2>
+          <h3 class="display-5 mb-0">Real Results from Real Customers</h3>
+        </div>
+      </div>
+      
+      <div class="row gx-lg-8 gx-xl-12 gy-8">
+        {% for case_study in solution.case_studies %}
+        <div class="col-md-6 col-lg-4">
+          <div class="card shadow-lg">
+            <div class="card-body">
+              <div class="icon btn btn-circle btn-lg btn-soft-success pe-none mb-4">
+                <i class="uil uil-chart-growth"></i>
+              </div>
+              <h5 class="mb-3">{{ case_study }}</h5>
+              <a href="/resources/case-studies/" class="btn btn-outline-primary rounded-pill">Read Full Story</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- ROI Calculator Section -->
+  {% if solution.slug and site.data.solutions.roi_models[solution.slug] %}
+  <section class="wrapper bg-white">
+    <div class="container py-14 py-md-16">
+      <div class="row gx-lg-8 gx-xl-12 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="fs-15 text-uppercase text-muted mb-3">ROI Calculator</h2>
+          <h3 class="display-5 mb-4">Calculate Your Potential Savings</h3>
+          <p class="lead fs-lg mb-6">See how {{ page.title }} can impact your bottom line with our interactive ROI calculator.</p>
+          
+          {% assign roi_model = site.data.solutions.roi_models[solution.slug] %}
+          <div class="row gy-4">
+            {% for output_item in roi_model.outputs %}
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center">
+                <div class="icon btn btn-circle btn-lg btn-soft-success pe-none me-4">
+                  <i class="uil uil-chart-line"></i>
+                </div>
+                <div>
+                  {% assign output_parts = output_item | split: ': ' %}
+                  <h5 class="mb-0">{{ output_parts[1] }}</h5>
+                  <p class="mb-0 text-muted">{{ output_parts[0] }}</p>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          
+          <a href="/resources/roi-calculator/?solution={{ solution.slug }}" class="btn btn-lg btn-primary rounded-pill mt-6">Calculate Your ROI</a>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="bg-pale-primary rounded p-6">
+            <h5 class="mb-4">What You'll Need:</h5>
+            <ul class="list-unstyled mb-0">
+              {% for input in roi_model.inputs %}
+              <li class="mb-2">
+                <i class="uil uil-check text-primary me-2"></i>{{ input }}
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- Content from Page -->
+  {% if page.content and page.content != empty %}
+  <section class="wrapper bg-light">
+    <div class="container py-14 py-md-16">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <div class="blog single">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- CTA Section -->
+  <section class="wrapper bg-primary text-white">
+    <div class="container py-14 py-md-16">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="display-5 mb-3 text-white">Ready to Transform Your {{ page.title | remove: " Support" | remove: " Management" }}?</h2>
+          <p class="lead fs-lg mb-6 text-white opacity-8">Join hundreds of legal professionals who have revolutionized their practice with Lapis Legal AI.</p>
+          <div class="d-flex justify-content-center">
+            <a href="/contact/#demo" class="btn btn-lg btn-white rounded-pill me-2">Schedule Demo</a>
+            <a href="/pricing/" class="btn btn-lg btn-outline-white rounded-pill">View Pricing</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Schema.org structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "{{ page.title }}",
+  "description": "{{ solution.description | default: page.description | strip_html }}",
+  "provider": {
+    "@type": "Organization",
+    "name": "Lapis Legal AI",
+    "url": "{{ site.url }}"
+  },
+  "areaServed": "Global",
+  "category": "Legal Technology Solutions"
+}
+</script>

@@ -1,0 +1,39 @@
+<!-- Features Showcase Section -->
+<section class="wrapper bg-white">
+  <div class="container py-14 py-md-16">
+    <div class="row mb-10">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="fs-15 text-uppercase text-primary mb-3">{{ page.features_showcase.subtitle }}</h2>
+        <h3 class="display-4 mb-0">{{ page.features_showcase.title }}</h3>
+      </div>
+    </div>
+    
+    <div class="row gx-lg-8 gx-xl-12 gy-8">
+      {% for item in page.features_showcase.items %}
+      <div class="col-md-6 col-lg-3">
+        <div class="card shadow-lg h-100">
+          <div class="card-body text-center p-6">
+            <div class="icon btn btn-circle btn-xl btn-soft-primary pe-none mx-auto mb-4">
+              <i class="uil uil-{{ item.icon }}"></i>
+            </div>
+            <h4 class="mb-3">{{ item.name }}</h4>
+            <p class="mb-4">{{ item.description }}</p>
+            
+            <!-- Metrics Badge -->
+            <div class="badge bg-pale-primary text-primary rounded-pill mb-4">
+              {{ item.metrics }}
+            </div>
+            
+            <a href="{{ item.link }}" class="btn btn-outline-primary rounded-pill">Learn More</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    
+    <!-- View All Features CTA -->
+    <div class="text-center mt-8">
+      <a href="/features/" class="btn btn-lg btn-primary rounded-pill">View All Features</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,16 @@
+{% if page.final_cta %}
+<section class="wrapper bg-primary text-white">
+  <div class="container py-14 py-md-16">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <h2 class="display-4 mb-3 text-white">{{ page.final_cta.title }}</h2>
+        <p class="lead fs-lg mb-6 text-white">{{ page.final_cta.subtitle }}</p>
+        <div class="d-flex justify-content-center">
+          <span><a href="{{ page.final_cta.primary_button.link }}" class="btn btn-white rounded-pill mx-1">{{ page.final_cta.primary_button.text }}</a></span>
+          <span><a href="{{ page.final_cta.secondary_button.link }}" class="btn btn-outline-white rounded-pill mx-1">{{ page.final_cta.secondary_button.text }}</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}

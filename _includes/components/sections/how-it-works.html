@@ -1,0 +1,23 @@
+{% if page.how_it_works %}
+<section class="wrapper bg-gray">
+  <div class="container py-14 py-md-16">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <h2 class="fs-15 text-uppercase text-primary mb-3">{{ page.how_it_works.subtitle }}</h2>
+        <h3 class="display-4 mb-10 px-xxl-15">{{ page.how_it_works.title }}</h3>
+      </div>
+    </div>
+    <div class="row gx-lg-8 gx-xl-12 gy-10 process-wrapper line">
+      {% for step in page.how_it_works.steps %}
+      <div class="col-md-6 col-lg-3"> 
+        <span class="icon btn btn-block btn-lg btn-soft-primary pe-none mb-4">
+          <span class="number fs-18">{{ forloop.index }}</span>
+        </span>
+        <h4 class="mb-1">{{ step.title }}</h4>
+        <p class="mb-0">{{ step.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

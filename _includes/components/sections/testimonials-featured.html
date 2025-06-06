@@ -1,0 +1,27 @@
+{% if page.testimonials_featured %}
+<section class="wrapper bg-light">
+  <div class="container py-14 py-md-16">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <h2 class="fs-15 text-uppercase text-primary mb-3">{{ page.testimonials_featured.subtitle }}</h2>
+        <h3 class="display-4 mb-10 px-xxl-15">{{ page.testimonials_featured.title }}</h3>
+      </div>
+    </div>
+    <div class="row gx-lg-8 gx-xl-12 gy-10">
+      {% for testimonial in site.data.testimonials.testimonials limit:3 %}
+      <div class="col-lg-4">
+        <blockquote class="testimonial text-center">
+          <p>"{{ testimonial.quote }}"</p>
+          <div class="blockquote-details">
+            <div class="info ps-0">
+              <h5 class="mb-1">{{ testimonial.name }}</h5>
+              <p class="mb-0">{{ testimonial.role }}, {{ testimonial.company }}</p>
+            </div>
+          </div>
+        </blockquote>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}

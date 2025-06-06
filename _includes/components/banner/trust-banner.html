@@ -1,0 +1,10 @@
+{% if page.banner.enable %}
+<div class="navbar-top bg-dark text-white fw-medium fs-13 mb-0">
+  <div class="container d-flex flex-nowrap align-items-center">
+    <div class="flex-grow-1 text-center">
+      {{ page.banner.text }}
+    </div>
+    <button type="button" class="btn-close btn-close-white opacity-75 position-relative" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+</div>
+{% endif %}

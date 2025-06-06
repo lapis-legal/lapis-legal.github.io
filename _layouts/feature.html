@@ -1,0 +1,221 @@
+---
+layout: default
+---
+
+{% assign feature = site.data.features.features | where: "slug", page.slug | first %}
+
+<div class="wrapper bg-white">
+  <!-- Breadcrumb -->
+  <nav aria-label="breadcrumb" class="pt-4">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/features/">Features</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="wrapper bg-light">
+    <div class="container pt-10 pb-15 pt-md-14 pb-md-20">
+      <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+        <div class="col-lg-6">
+          <div class="badge bg-primary text-white rounded-pill mb-4">
+            {{ feature.category | default: page.category }}
+          </div>
+          <h1 class="display-2 mb-4">{{ page.title }}</h1>
+          <p class="lead fs-lg mb-6">{{ feature.long_description | default: page.description }}</p>
+          
+          <!-- Key Metrics -->
+          {% if feature.time_savings %}
+          <div class="row gy-4 mb-6">
+            <div class="col-md-6">
+              <div class="d-flex align-items-center">
+                <div class="icon btn btn-circle btn-lg btn-soft-primary pe-none me-4">
+                  <i class="uil uil-clock"></i>
+                </div>
+                <div>
+                  <h4 class="mb-0">{{ feature.time_savings }}</h4>
+                  <p class="mb-0 text-muted">Time Savings</p>
+                </div>
+              </div>
+            </div>
+            {% if site.data.metrics.feature_metrics[page.slug] %}
+            <div class="col-md-6">
+              <div class="d-flex align-items-center">
+                <div class="icon btn btn-circle btn-lg btn-soft-success pe-none me-4">
+                  <i class="uil uil-chart-growth"></i>
+                </div>
+                <div>
+                  <p class="mb-0 fw-bold">{{ site.data.metrics.feature_metrics[page.slug].primary }}</p>
+                </div>
+              </div>
+            </div>
+            {% endif %}
+          </div>
+          {% endif %}
+
+          <!-- CTAs -->
+          <div class="d-flex flex-row mb-2">
+            <a href="/contact/#demo" class="btn btn-lg btn-primary rounded-pill me-2">Request Demo</a>
+            {% if feature.demo_available %}
+            <a href="#demo-video" class="btn btn-lg btn-outline-primary rounded-pill">Watch Demo</a>
+            {% endif %}
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          {% if page.screenshot %}
+          <figure class="rounded shadow-lg">
+            <img src="{{ page.screenshot }}" srcset="{{ page.screenshot_2x }} 2x" alt="{{ page.title }} Screenshot" />
+          </figure>
+          {% else %}
+          <!-- Placeholder for screenshot -->
+          <div class="bg-pale-primary rounded shadow-lg p-8 text-center">
+            <i class="uil uil-{{ feature.icon | default: 'desktop' }} display-4 text-primary mb-4"></i>
+            <h5 class="text-muted">{{ page.title }} Interface</h5>
+            <p class="text-muted mb-0">Interactive demo available upon request</p>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Benefits -->
+  <section class="wrapper bg-white">
+    <div class="container py-14 py-md-16">
+      <div class="row mb-10">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="fs-15 text-uppercase text-muted mb-3">Key Benefits</h2>
+          <h3 class="display-5 mb-0">Why {{ page.title }}?</h3>
+        </div>
+      </div>
+      
+      <div class="row gx-lg-8 gx-xl-12 gy-8">
+        {% for benefit in feature.key_benefits %}
+        <div class="col-md-6 col-lg-4">
+          <div class="d-flex flex-row">
+            <div>
+              <div class="icon btn btn-circle btn-lg btn-soft-primary pe-none me-4">
+                <i class="uil uil-check"></i>
+              </div>
+            </div>
+            <div>
+              <p class="mb-0">{{ benefit }}</p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  {% if page.workflow %}
+  <section class="wrapper bg-light">
+    <div class="container py-14 py-md-16">
+      <div class="row mb-10">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="fs-15 text-uppercase text-muted mb-3">How It Works</h2>
+          <h3 class="display-5 mb-0">{{ page.title }} Workflow</h3>
+        </div>
+      </div>
+      
+      {{ page.workflow }}
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- Technical Specifications -->
+  {% if page.technical_specs %}
+  <section class="wrapper bg-white">
+    <div class="container py-14 py-md-16">
+      <div class="row gx-lg-8 gx-xl-12">
+        <div class="col-lg-6">
+          <h3 class="display-6 mb-6">Technical Specifications</h3>
+          {{ page.technical_specs }}
+        </div>
+        <div class="col-lg-6">
+          <h3 class="display-6 mb-6">Integration Details</h3>
+          {{ page.integration_details | default: "<p>Seamless integration with existing legal technology stacks through our comprehensive API. Supports standard authentication methods and provides real-time data synchronization.</p>" }}
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- Related Features -->
+  {% if feature.related_features and feature.related_features.size > 0 %}
+  <section class="wrapper bg-light">
+    <div class="container py-14 py-md-16">
+      <div class="row mb-10">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="fs-15 text-uppercase text-muted mb-3">Related Features</h2>
+          <h3 class="display-5 mb-0">Explore More Capabilities</h3>
+        </div>
+      </div>
+      
+      <div class="row gx-lg-8 gx-xl-12 gy-8">
+        {% for related_slug in feature.related_features limit:3 %}
+          {% assign related_feature = site.data.features.features | where: "slug", related_slug | first %}
+          {% if related_feature %}
+          <div class="col-md-6 col-lg-4">
+            <div class="card shadow-lg">
+              <div class="card-body">
+                <div class="icon btn btn-circle btn-lg btn-soft-primary pe-none mb-4">
+                  <i class="uil uil-{{ related_feature.icon | default: 'cog' }}"></i>
+                </div>
+                <h4 class="mb-3">{{ related_feature.name }}</h4>
+                <p class="mb-4">{{ related_feature.short_description }}</p>
+                <a href="/features/{{ related_feature.slug }}/" class="btn btn-outline-primary rounded-pill">Learn More</a>
+              </div>
+            </div>
+          </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- CTA Section -->
+  <section class="wrapper bg-primary text-white">
+    <div class="container py-14 py-md-16">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="display-5 mb-3 text-white">Ready to Experience {{ page.title }}?</h2>
+          <p class="lead fs-lg mb-6 text-white opacity-8">See how {{ page.title }} can transform your legal practice with a personalized demonstration.</p>
+          <div class="d-flex justify-content-center">
+            <a href="/contact/#demo" class="btn btn-lg btn-white rounded-pill me-2">Schedule Demo</a>
+            <a href="/pricing/" class="btn btn-lg btn-outline-white rounded-pill">View Pricing</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Schema.org structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "{{ page.title }}",
+  "description": "{{ feature.long_description | default: page.description | strip_html }}",
+  "applicationCategory": "LegalTechnology",
+  "operatingSystem": "Web-based",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Lapis Legal AI",
+    "url": "{{ site.url }}"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "Contact for pricing",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  }
+}
+</script>

@@ -1,0 +1,34 @@
+{% if page.case_study_highlight %}
+<section class="wrapper bg-soft-primary">
+  <div class="container py-14 py-md-16">
+    <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+      <div class="col-lg-7">
+        <figure><img class="w-auto" src="{{ page.case_study_highlight.image }}" srcset="{{ page.case_study_highlight.image_2x }} 2x" alt="" /></figure>
+      </div>
+      <div class="col-lg-5">
+        <h2 class="fs-15 text-uppercase text-primary mb-3">{{ page.case_study_highlight.subtitle }}</h2>
+        <h3 class="display-4 mb-5">{{ page.case_study_highlight.title }}</h3>
+        <p class="lead fs-lg mb-6">{{ page.case_study_highlight.description }}</p>
+        <div class="row gy-3">
+          {% for metric in page.case_study_highlight.metrics %}
+          <div class="col-xl-6">
+            <div class="d-flex flex-row">
+              <div>
+                <span class="icon btn btn-block btn-sm btn-soft-primary pe-none me-4">
+                  <span class="uil uil-{{ metric.icon }}"></span>
+                </span>
+              </div>
+              <div>
+                <h4 class="mb-1">{{ metric.value }}</h4>
+                <p class="mb-0">{{ metric.label }}</p>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <a href="{{ page.case_study_highlight.cta_link }}" class="btn btn-primary rounded-pill mt-6">{{ page.case_study_highlight.cta_text }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}

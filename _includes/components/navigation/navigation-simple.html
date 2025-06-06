@@ -1,0 +1,75 @@
+<!-- Simple Navigation Template that matches navigation.yml structure -->
+<ul class="navbar-nav">
+  {% for item in site.data.navigation.primary %}
+    {% if item.type == "simple" %}
+      <!-- Simple link without dropdown -->
+      <li class="nav-item">
+        <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.name }}</a>
+      </li>
+    {% elsif item.type == "dropdown" and item.dropdown %}
+      <!-- Dropdown menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">{{ item.name }}</a>
+        <ul class="dropdown-menu">
+          {% for subitem in item.dropdown %}
+            {% if subitem.separator %}
+              <li><hr class="dropdown-divider"></li>
+            {% elsif subitem.class == "dropdown-header" %}
+              <li><h6 class="dropdown-header">{{ subitem.name }}</h6></li>
+            {% else %}
+              <li>
+                <a class="dropdown-item" href="{{ subitem.url | relative_url }}">
+                  {{ subitem.name }}
+                  {% if subitem.description %}
+                    <span class="d-block small text-muted">{{ subitem.description }}</span>
+                  {% endif %}
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </li>
+    {% elsif item.type == "mega_menu" and item.mega_menu %}
+      <!-- Mega menu -->
+      <li class="nav-item dropdown dropdown-mega">
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">{{ item.name }}</a>
+        <ul class="dropdown-menu mega-menu">
+          <li class="mega-menu-content">
+            <div class="row gx-0 gx-lg-3">
+              {% for category in item.mega_menu.categories %}
+                <div class="col-lg-3">
+                  <h6 class="dropdown-header">{{ category.name }}</h6>
+                  <ul class="list-unstyled">
+                    {% for feature in category.features %}
+                      <li>
+                        <a class="dropdown-item" href="{{ feature.url | relative_url }}">
+                          {{ feature.name }}
+                          {% if feature.description %}
+                            <span class="d-block small text-muted">{{ feature.description }}</span>
+                          {% endif %}
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              {% endfor %}
+            </div>
+            {% if item.mega_menu.footer_links %}
+              <div class="dropdown-divider"></div>
+              <div class="d-flex gap-2 p-2">
+                {% for link in item.mega_menu.footer_links %}
+                  <a href="{{ link.url | relative_url }}" class="{{ link.class }}">{{ link.name }}</a>
+                {% endfor %}
+              </div>
+            {% endif %}
+          </li>
+        </ul>
+      </li>
+    {% else %}
+      <!-- Fallback for any other type -->
+      <li class="nav-item">
+        <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.name }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

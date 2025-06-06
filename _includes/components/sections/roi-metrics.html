@@ -1,0 +1,34 @@
+<!-- ROI Metrics Section -->
+<section class="wrapper bg-soft-primary">
+  <div class="container py-14 py-md-16">
+    <div class="row mb-10">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="fs-15 text-uppercase text-primary mb-3">{{ page.roi_metrics.subtitle }}</h2>
+        <h3 class="display-4 mb-0">{{ page.roi_metrics.title }}</h3>
+      </div>
+    </div>
+    
+    <div class="row gx-lg-8 gx-xl-12 gy-8">
+      {% for stat in page.roi_metrics.stats %}
+      <div class="col-md-6 col-lg-3">
+        <div class="card shadow-lg bg-white text-center">
+          <div class="card-body py-6">
+            <div class="icon btn btn-circle btn-xl btn-soft-success pe-none mx-auto mb-4">
+              <i class="uil uil-chart-growth"></i>
+            </div>
+            <h3 class="display-5 text-primary mb-2">{{ stat.stat }}</h3>
+            <h5 class="mb-3">{{ stat.description }}</h5>
+            <p class="mb-0">{{ stat.detail }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    
+    <!-- ROI Calculator CTA -->
+    <div class="text-center mt-8">
+      <p class="lead fs-lg mb-4">Calculate your potential savings with our ROI calculator</p>
+      <a href="/resources/roi-calculator/" class="btn btn-lg btn-primary rounded-pill">Calculate Your ROI</a>
+    </div>
+  </div>
+</section>
