@@ -17,6 +17,7 @@ sandbox\ htm/sandbox340/dev/*.zip
 
 # Development
 .claude/
+.mcp.json
 
 # Screenshots
 screenshot-*.png
