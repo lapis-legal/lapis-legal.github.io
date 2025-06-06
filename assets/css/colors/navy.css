@@ -1,0 +1,9 @@
+/* Navy color scheme */
+:root {
+  --bs-primary: #003366;
+  --bs-primary-rgb: 0, 51, 102;
+  --bs-primary-hover: #004080;
+  --bs-primary-hover-rgb: 0, 64, 128;
+  --bs-primary-soft: #e6f0ff;
+  --bs-primary-soft-rgb: 230, 240, 255;
+}

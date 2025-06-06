@@ -1,0 +1,20 @@
+/* Urbanist font */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bs-font-sans-serif: 'Urbanist', sans-serif;
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-heading-font-family: var(--bs-font-sans-serif);
+  --bs-heading-font-weight: 700;
+}
+
+body {
+  font-family: var(--bs-body-font-family);
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: var(--bs-heading-font-family);
+  font-weight: var(--bs-heading-font-weight);
+}

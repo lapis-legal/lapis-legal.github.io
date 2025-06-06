@@ -1,0 +1,132 @@
+// Readability and Accessibility Improvements
+
+// Remove opacity from important text
+.text-white {
+  &.opacity-8,
+  &.opacity-7,
+  &.opacity-6 {
+    opacity: 1 !important;
+  }
+}
+
+// Better contrast for muted text
+.text-muted {
+  color: #495057 !important; // Darker gray for better contrast
+}
+
+// Increase small font sizes
+.fs-sm {
+  font-size: 0.9rem !important; // Increased from 0.875rem
+}
+
+// Trust indicators specific styling - DARKER BACKGROUND
+.wrapper {
+  &.bg-light {
+    background-color: #e9ecef !important; // Much darker gray background
+  }
+  
+  .text-body {
+    color: #212529 !important; // Very dark gray text
+    font-weight: 500 !important; // Slightly bolder
+  }
+}
+
+// Fix soft primary backgrounds - make them darker
+.bg-soft-primary {
+  background-color: #cce0ff !important; // Darker blue background
+}
+
+.btn-soft-primary {
+  background-color: #003366 !important; // Use full navy
+  color: white !important;
+  
+  i {
+    color: white !important;
+  }
+}
+
+// Footer link improvements
+footer {
+  .link-body,
+  .link-inverse {
+    opacity: 1 !important;
+    &:hover {
+      opacity: 0.8 !important;
+    }
+  }
+}
+
+// Badge contrast improvements - MUCH DARKER
+.badge {
+  &.bg-pale-primary {
+    background-color: #003366 !important; // Full navy background
+    color: white !important; // White text
+  }
+  
+  &.bg-white {
+    background-color: #f8f9fa !important; // Light gray instead of pure white
+    &.text-primary {
+      color: #001a33 !important; // Very dark navy
+      font-weight: 600 !important;
+    }
+  }
+}
+
+// Button contrast improvements
+.btn-outline-white {
+  border-width: 2px !important; // Thicker border
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border-color: white !important;
+  }
+}
+
+// Card improvements
+.card {
+  .text-muted {
+    color: #495057 !important;
+  }
+  
+  // Features cards
+  &.shadow-lg {
+    .badge {
+      background-color: #003366 !important;
+      color: white !important;
+    }
+  }
+}
+
+// ROI section background fix
+.bg-soft-primary {
+  background-color: #e6f0ff !important; // Ensure it's visible
+}
+
+// Ensure all small text meets minimum size
+p, span, div {
+  &.fs-sm {
+    font-weight: 500 !important; // Make small text bolder
+    @media (max-width: 768px) {
+      font-size: 1rem !important; // Even larger on mobile
+    }
+  }
+}
+
+// Fix gradient overlay text
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #003366 0%, #004080 100%) !important; // Solid navy gradient
+  
+  .text-white {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important; // Stronger shadow
+  }
+}
+
+// Fix primary color text on light backgrounds
+.text-primary {
+  color: #001a33 !important; // Much darker navy
+  font-weight: 600 !important;
+}
+
+// Fix the "How it works" section gray background
+.bg-gray {
+  background-color: #e9ecef !important; // Darker gray
+}
