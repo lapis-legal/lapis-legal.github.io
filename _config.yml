@@ -1,0 +1,175 @@
+# Site settings for Lapis Legal AI
+title: "Lapis Legal AI - Revolutionary Legal Case Management"
+email: "info@lapislegai.ai"
+description: "Transform your legal practice with AI-powered case analysis, document review, and strategic insights. Reduce document review time by 80% with cutting-edge LLM technology."
+baseurl: ""
+url: "https://lapislegai.ai"
+twitter_username: LapisLegalAI
+github_username: lapis-legal
+linkedin_username: company/lapislegaiai
+
+# Company Information
+company:
+  name: "Lapis Legal AI"
+  tagline: "AI-Powered Legal Intelligence at Your Command"
+  phone: "+1 (555) 123-4567"
+  address: "123 Innovation Drive, San Francisco, CA 94105"
+
+# Build settings
+markdown: kramdown
+#permalink: /blog/:year/:month/:day/:title/
+permalink: /blog/:title/
+sass:
+  style: compressed
+  sass_dir: _sass
+  # Enable source maps in development, disable in production
+  sourcemap: never # Valid values: 'development' (default), 'always', 'never'
+  
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate-v2
+  - jekyll-watch
+  - jekyll-toc   #Documentation TOC 
+
+# TOC Settings for documentation
+toc:
+  min_level: 2
+  max_level: 3
+  list_class: 'list-unstyled fs-sm lh-sm text-reset'
+  sublist_class: 'list-unstyled pt-2 ps-2 fs-sm lh-sm text-reset'
+  item_class: 'nav-link scroll'
+  item_prefix: 'snippet-'
+  ordered: false
+  no_toc_section_class: 'no-toc'
+  numbered_items: true
+  auto_ids: true
+  sanitize: false
+
+# Pagination
+pagination:
+  enabled: true
+  debug: true
+  per_page: 6
+  collection: 'posts'
+  permalink: '/page:num/'
+  title: ':title - Page :num'
+  sort_field: 'date'
+  sort_reverse: true
+  trail:
+    before: 2
+    after: 2
+  extension: html
+  indexpage: 'index'
+  
+# AutoPages for collections
+autopages:
+  enabled: false
+  collections:
+    enabled: false
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  authors:
+    output: true
+    permalink: /authors/:path/
+  features:
+    output: true
+    permalink: /features/:path/
+  solutions:
+    output: true
+    permalink: /solutions/:path/
+  resources:
+    output: true
+    permalink: /resources/:path/
+  case_studies:
+    output: true
+    permalink: /case-studies/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "features"
+    values:
+      layout: "feature"
+  - scope:
+      path: ""
+      type: "solutions"
+    values:
+      layout: "solution"
+  - scope:
+      path: ""
+      type: "resources"
+    values:
+      layout: "resource"
+  - scope:
+      path: ""
+      type: "case_studies"
+    values:
+      layout: "case_study"
+      
+
+# Exclude from processing and watching
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - README.md
+  - package.json
+  - package-lock.json
+  - yarn.lock
+  - tmp
+  - .git
+  - .github
+  - .vscode
+
+# LiveReload settings
+livereload_max_delay: 5
+livereload_min_delay: 2.5
+
+# Tags settings
+tag_page_layout: blog/tag_page
+tag_page_dir: tag
+
+# Archive settings
+jekyll-archives:
+  enabled:
+    - year
+    - month
+    - tags
+    - categories
+  layouts:
+    year: blog/archive-year
+    month: blog/archive-month
+    tag: blog/archive-tag
+    category: blog/archive-category
+  permalinks:
+    year: '/blog/:year/'
+    month: '/blog/:year/:month/'
+    tag: '/blog/tag/:name/'
+    category: '/blog/category/:name/'
