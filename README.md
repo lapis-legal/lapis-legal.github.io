@@ -1,6 +1,6 @@
 # Lapis Legal AI Website
 
-A modern Jekyll-based website for Lapis Legal AI, showcasing legal technology solutions.
+A modern Jekyll-based website for Lapis Legal AI, showcasing legal technology solutions and AI-powered litigation tools.
 
 ## Installation
 
