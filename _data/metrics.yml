@@ -1,0 +1,187 @@
+# Metrics and ROI data for Lapis Legal AI
+
+# Hero/Trust Indicators for Homepage
+trust_indicators:
+  - stat: "500+"
+    description: "Law Firms Trust Lapis Legal"
+    icon: "users"
+  - stat: "80%"
+    description: "Average Time Savings"
+    icon: "clock"
+  - stat: "SOC 2"
+    description: "Type II Certified"
+    icon: "shield-check"
+  - stat: "99.9%"
+    description: "Uptime SLA"
+    icon: "server"
+
+# Key ROI Metrics for Homepage
+roi_highlights:
+  - stat: "75%"
+    description: "Reduction in Document Review Time"
+    detail: "Process thousands of documents in hours, not days"
+  - stat: "60%"
+    description: "Faster Deposition Preparation"
+    detail: "AI-generated questions and strategic organization"
+  - stat: "85%"
+    description: "Improvement in Evidence Coverage"
+    detail: "Never miss critical evidence with AI gap detection"
+  - stat: "3.2x"
+    description: "ROI in First Year"
+    detail: "Proven cost savings and efficiency gains"
+
+# Feature-Specific Metrics
+feature_metrics:
+  case-intelligence-dashboard:
+    primary: "60% improvement in case assessment accuracy"
+    secondary: "5x faster case strength evaluation"
+    time_savings: "2-3 hours per case"
+  
+  complaint-analysis-tool:
+    primary: "80% reduction in response time"
+    secondary: "99% accuracy in assertion extraction"
+    time_savings: "6-8 hours per complaint"
+  
+  discovery-copilot:
+    primary: "85% improvement in evidence coverage"
+    secondary: "70% reduction in discovery gaps"
+    time_savings: "10-15 hours per discovery phase"
+  
+  deposition-preparation-assistant:
+    primary: "70% faster preparation time"
+    secondary: "300% increase in question comprehensiveness"
+    time_savings: "8-12 hours per deposition"
+  
+  transcript-analysis-tool:
+    primary: "75% reduction in review time"
+    secondary: "95% accuracy in key statement identification"
+    time_savings: "4-6 hours per transcript"
+  
+  ai-insights-dashboard:
+    primary: "90% of critical insights surfaced automatically"
+    secondary: "50% improvement in strategic decision making"
+    time_savings: "3-5 hours per case analysis"
+
+# Industry Benchmarks and Comparisons
+industry_benchmarks:
+  document_review:
+    traditional: "20-40 documents per hour"
+    with_lapis: "200-400 documents per hour"
+    improvement: "10x increase in throughput"
+  
+  deposition_prep:
+    traditional: "12-20 hours per deposition"
+    with_lapis: "4-6 hours per deposition"
+    improvement: "70% time reduction"
+  
+  case_analysis:
+    traditional: "2-3 days for initial assessment"
+    with_lapis: "2-3 hours for comprehensive analysis"
+    improvement: "80% faster insights"
+  
+  discovery_coverage:
+    traditional: "60-70% evidence identification"
+    with_lapis: "85-95% evidence identification"
+    improvement: "25-35% better coverage"
+
+# Cost Savings by Firm Size
+cost_savings:
+  solo_practitioner:
+    annual_savings: "$25,000 - $50,000"
+    time_savings: "10-15 hours per week"
+    cases_capacity: "50% more cases handled"
+  
+  small_firm:
+    annual_savings: "$100,000 - $250,000"
+    time_savings: "40-60 hours per week team-wide"
+    efficiency_gain: "35% increase in billable hour productivity"
+  
+  mid_size_firm:
+    annual_savings: "$500,000 - $1,200,000"
+    time_savings: "100-200 hours per week team-wide"
+    competitive_advantage: "25% faster matter resolution"
+  
+  large_firm:
+    annual_savings: "$2,000,000 - $5,000,000"
+    time_savings: "500+ hours per week team-wide"
+    scalability: "Handle 2x case volume with same staff"
+
+# Client Satisfaction Metrics
+client_satisfaction:
+  overall_satisfaction: "94% client satisfaction rate"
+  would_recommend: "96% would recommend to colleagues"
+  implementation_success: "98% successful implementations"
+  support_rating: "4.8/5 customer support rating"
+
+# Performance and Technical Metrics
+technical_performance:
+  processing_speed: "Process 1,000-page documents in under 5 minutes"
+  accuracy_rate: "95%+ accuracy across all extraction types"
+  uptime: "99.9% uptime with 24/7 monitoring"
+  security: "SOC 2 Type II, GDPR compliant, enterprise-grade encryption"
+
+# Market Position and Recognition
+market_recognition:
+  awards:
+    - "Legal Tech Innovation Award 2024"
+    - "AI Excellence in Legal Services 2024"
+    - "Best Legal Analytics Platform 2024"
+  
+  press_mentions:
+    - "Featured in Legal Tech News"
+    - "Recognized by ABA Legal Technology Survey"
+    - "Case study in Harvard Law Review"
+  
+  analyst_recognition:
+    - "Leader in Gartner Legal Analytics Quadrant"
+    - "Top 10 Legal AI Solutions by Thomson Reuters"
+    - "Recommended by Forrester for Document Analysis"
+
+# Practice Area Specific ROI
+practice_area_roi:
+  personal_injury:
+    settlement_improvement: "25% higher average settlements"
+    case_cycle_time: "40% faster case resolution"
+    client_satisfaction: "30% improvement in client satisfaction"
+  
+  commercial_litigation:
+    cost_reduction: "45% reduction in litigation costs"
+    evidence_discovery: "60% more relevant evidence identified"
+    trial_preparation: "50% faster trial preparation"
+  
+  corporate_legal:
+    outside_counsel_savings: "35% reduction in outside counsel spend"
+    contract_review: "70% faster contract review and analysis"
+    compliance_improvement: "90% improvement in compliance tracking"
+  
+  employment_law:
+    risk_mitigation: "80% better risk identification"
+    response_time: "60% faster response to employment claims"
+    policy_compliance: "95% improvement in policy adherence"
+
+# Customer Success Metrics by Implementation Timeline
+implementation_timeline:
+  week_1:
+    - "Initial training completed"
+    - "First cases uploaded and analyzed"
+    - "20% time savings realized"
+  
+  month_1:
+    - "Full team onboarded"
+    - "Workflow integration complete"
+    - "40% time savings achieved"
+  
+  month_3:
+    - "Advanced features adopted"
+    - "Custom workflows established"
+    - "60% time savings maintained"
+  
+  month_6:
+    - "Full ROI typically realized"
+    - "80% of maximum efficiency gains achieved"
+    - "Competitive advantage clearly established"
+  
+  year_1:
+    - "3.2x average ROI documented"
+    - "Maximum efficiency and cost savings realized"
+    - "Strategic transformation complete"

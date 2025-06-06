@@ -1,0 +1,239 @@
+# Solutions data for Lapis Legal AI
+
+solutions:
+  - name: "Litigation Support"
+    slug: "litigation-support"
+    icon: "gavel"
+    headline: "Win More Cases with AI-Powered Litigation Intelligence"
+    description: "Transform your litigation practice with comprehensive AI tools designed specifically for trial attorneys and litigation teams."
+    target_audience:
+      - "Trial Attorneys"
+      - "Litigation Teams" 
+      - "Personal Injury Lawyers"
+      - "Commercial Litigators"
+      - "Defense Counsel"
+    
+    pain_points:
+      - "Time-consuming document review delays case preparation"
+      - "Missing critical evidence or contradictions"
+      - "Inconsistent case analysis across team members"
+      - "Difficulty identifying strategic advantages"
+      - "Manual deposition preparation is inefficient"
+    
+    value_propositions:
+      - "Reduce document review time by 80%"
+      - "Never miss critical evidence or contradictions"
+      - "Get objective, data-driven case strength assessments"
+      - "Prepare depositions 70% faster with AI assistance"
+      - "Identify case-winning insights automatically"
+    
+    key_features:
+      - feature: "case-intelligence-dashboard"
+        benefit: "Strategic case assessment and strength scoring"
+      - feature: "complaint-analysis-tool"
+        benefit: "Automated assertion extraction and response generation"
+      - feature: "discovery-copilot"
+        benefit: "Evidence gap identification and discovery management"
+      - feature: "deposition-preparation-assistant"
+        benefit: "AI-powered question generation and organization"
+      - feature: "transcript-analysis-tool"
+        benefit: "Extract maximum value from witness testimony"
+      - feature: "enhanced-contradiction-analysis"
+        benefit: "Identify and leverage conflicting statements"
+    
+    metrics:
+      - stat: "80%"
+        description: "Reduction in document review time"
+      - stat: "70%"
+        description: "Faster deposition preparation"
+      - stat: "60%"
+        description: "Improvement in case strength assessment accuracy"
+      - stat: "90%"
+        description: "Increase in contradiction detection"
+    
+    case_studies:
+      - "Johnson & Associates: 75% reduction in case prep time"
+      - "Metro Defense Group: $2M savings in first year"
+      - "Coastal Law Firm: 40% increase in favorable settlements"
+
+  - name: "Corporate Legal"
+    slug: "corporate-legal"
+    icon: "building"
+    headline: "Control Costs and Standardize Legal Operations"
+    description: "Empower your corporate legal department with AI tools that reduce costs, improve consistency, and enhance strategic decision-making."
+    target_audience:
+      - "General Counsel"
+      - "Corporate Legal Departments"
+      - "Legal Operations Managers"
+      - "Compliance Officers"
+      - "In-House Counsel"
+    
+    pain_points:
+      - "Unpredictable outside counsel costs"
+      - "Inconsistent matter handling across team"
+      - "Difficulty tracking case progress and outcomes"
+      - "Manual contract and document review overhead"
+      - "Limited visibility into legal spend ROI"
+    
+    value_propositions:
+      - "Reduce legal spend by 40% through efficient workflows"
+      - "Standardize legal processes across the organization"
+      - "Get real-time visibility into all legal matters"
+      - "Automate routine document analysis tasks"
+      - "Make data-driven legal strategy decisions"
+    
+    key_features:
+      - feature: "case-intelligence-dashboard"
+        benefit: "Portfolio-wide case management and reporting"
+      - feature: "document-viewer"
+        benefit: "Centralized contract and document repository"
+      - feature: "settlement-analysis-tool"
+        benefit: "Data-driven settlement and risk assessment"
+      - feature: "fact-center-ui"
+        benefit: "Organizational knowledge management"
+      - feature: "ai-insights-dashboard"
+        benefit: "Strategic insights across legal portfolio"
+      - feature: "request-generator-report-builder"
+        benefit: "Automated reporting and documentation"
+    
+    metrics:
+      - stat: "40%"
+        description: "Reduction in legal spend"
+      - stat: "60%"
+        description: "Faster matter resolution"
+      - stat: "85%"
+        description: "Improvement in process consistency"
+      - stat: "50%"
+        description: "Reduction in outside counsel dependency"
+    
+    case_studies:
+      - "TechCorp Inc: $5M annual legal cost savings"
+      - "Global Manufacturing: 50% reduction in contract review time"
+      - "Financial Services Corp: 90% improvement in compliance tracking"
+
+  - name: "Law Firm Management"
+    slug: "law-firm-management"
+    icon: "users"
+    headline: "Gain Competitive Advantage with Legal AI"
+    description: "Transform your firm's operations with AI technology that improves efficiency, enhances client service, and drives profitable growth."
+    target_audience:
+      - "Managing Partners"
+      - "Practice Group Leaders"
+      - "Law Firm COOs"
+      - "Business Development"
+      - "Legal Technology Officers"
+    
+    pain_points:
+      - "Price pressure from clients demanding efficiency"
+      - "Difficulty differentiating from competitors"
+      - "Inconsistent service quality across attorneys"
+      - "Challenge training and retaining junior associates"
+      - "Limited visibility into matter profitability"
+    
+    value_propositions:
+      - "Increase matter profitability by 35%"
+      - "Differentiate with cutting-edge AI capabilities"
+      - "Deliver consistent, high-quality client service"
+      - "Accelerate associate training and development"
+      - "Win more business with technology leadership"
+    
+    key_features:
+      - feature: "case-intelligence-dashboard"
+        benefit: "Data-driven matter management and client reporting"
+      - feature: "deposition-wizard-ui"
+        benefit: "Standardized processes for consistent quality"
+      - feature: "ai-insights-dashboard"
+        benefit: "Firm-wide intelligence and best practice sharing"
+      - feature: "settlement-analysis-tool"
+        benefit: "Objective case valuation for client counseling"
+      - feature: "timeline-analysis"
+        benefit: "Clear case visualization for client presentations"
+      - feature: "exhibit-management-ui"
+        benefit: "Professional trial preparation and presentation"
+    
+    metrics:
+      - stat: "35%"
+        description: "Increase in matter profitability"
+      - stat: "50%"
+        description: "Faster associate onboarding"
+      - stat: "25%"
+        description: "Improvement in client satisfaction scores"
+      - stat: "60%"
+        description: "Increase in business development win rate"
+    
+    case_studies:
+      - "Regional Law Firm: 45% increase in profits per partner"
+      - "Boutique Practice: 3x faster associate productivity"
+      - "Mid-size Firm: $8M in new business won with AI differentiation"
+
+# Practice Area Specializations
+practice_areas:
+  - name: "Personal Injury"
+    applicable_solutions: ["litigation-support"]
+    specific_benefits:
+      - "Medical record analysis and damages calculation"
+      - "Settlement valuation with comparable case data"
+      - "Automated medical chronology generation"
+  
+  - name: "Commercial Litigation"
+    applicable_solutions: ["litigation-support", "corporate-legal"]
+    specific_benefits:
+      - "Large-scale document analysis and review"
+      - "Expert testimony comparison and analysis"
+      - "Complex case mapping and strategy development"
+  
+  - name: "Employment Law"
+    applicable_solutions: ["corporate-legal", "law-firm-management"]
+    specific_benefits:
+      - "Policy compliance analysis"
+      - "Employment record review and timeline analysis"
+      - "Risk assessment and mitigation strategies"
+  
+  - name: "Intellectual Property"
+    applicable_solutions: ["corporate-legal", "litigation-support"]
+    specific_benefits:
+      - "Patent and trademark document analysis"
+      - "Prior art research and comparison"
+      - "IP portfolio management and strategy"
+  
+  - name: "Criminal Defense"
+    applicable_solutions: ["litigation-support"]
+    specific_benefits:
+      - "Evidence timeline construction and analysis"
+      - "Witness statement contradiction detection"
+      - "Case precedent identification and analysis"
+
+# ROI Calculations by Solution
+roi_models:
+  litigation-support:
+    inputs:
+      - "Hours per week on document review"
+      - "Average hourly billing rate"
+      - "Number of active cases"
+      - "Deposition preparation hours per case"
+    outputs:
+      - time_savings: "60-80%"
+      - cost_savings: "$50,000-200,000 annually per attorney"
+      - productivity_gain: "2-3x case handling capacity"
+  
+  corporate-legal:
+    inputs:
+      - "Annual outside counsel spend"
+      - "Number of legal matters per year"
+      - "In-house legal team size"
+      - "Contract review volume"
+    outputs:
+      - cost_reduction: "30-50%"
+      - efficiency_gain: "40-60%"
+      - risk_reduction: "Improved compliance and consistency"
+  
+  law-firm-management:
+    inputs:
+      - "Annual firm revenue"
+      - "Number of attorneys"
+      - "Average realization rate"
+      - "Client satisfaction scores"
+    outputs:
+      - profit_increase: "25-40%"
+      - client_retention: "15-25% improvement"
+      - business_development: "30-50% increase in win rate"

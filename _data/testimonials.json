@@ -1,0 +1,108 @@
+{
+  "testimonials": [
+    {
+      "name": "Sarah Johnson",
+      "position": "Partner, Johnson & Associates",
+      "company": "Johnson & Associates",
+      "avatar_image": "/assets/img/avatars/te1.webp",
+      "avatar_image2x": "/assets/img/avatars/te1@2x.webp",
+      "quote": "Lapis Legal AI has completely transformed our document review process. What used to take days now takes hours, with better accuracy. The ROI was evident within the first month.",
+      "ratings": 5,
+      "background_color": "navy",
+      "shadow": "shadow-lg",
+      "rounded": "rounded-xl",
+      "case_study": "/case-studies/johnson-associates/",
+      "metrics": "75% reduction in review time",
+      "practice_area": "Personal Injury"
+    },
+    {
+      "name": "Michael Chen",
+      "position": "General Counsel",
+      "company": "TechCorp Industries",
+      "avatar_image": "/assets/img/avatars/te2.webp",
+      "avatar_image2x": "/assets/img/avatars/te2@2x.webp",
+      "quote": "The contradiction detection feature alone has saved us countless hours and helped us identify case-winning inconsistencies we would have missed with manual review.",
+      "ratings": 5,
+      "background_color": "blue",
+      "shadow": "shadow-lg",
+      "rounded": "rounded-xl",
+      "case_study": "/case-studies/techcorp-industries/",
+      "metrics": "$2M annual cost savings",
+      "practice_area": "Corporate Legal"
+    },
+    {
+      "name": "David Rodriguez",
+      "position": "Managing Partner",
+      "company": "Metro Defense Group",
+      "avatar_image": "/assets/img/avatars/te3.webp",
+      "avatar_image2x": "/assets/img/avatars/te3@2x.webp",
+      "quote": "Our deposition preparation time has been cut by 70%. The AI-generated questions are comprehensive and strategically organized. It's like having a senior litigator as your research assistant.",
+      "ratings": 5,
+      "background_color": "green",
+      "shadow": "shadow-lg",
+      "rounded": "rounded-xl",
+      "case_study": "/case-studies/metro-defense-group/",
+      "metrics": "70% faster deposition prep",
+      "practice_area": "Criminal Defense"
+    },
+    {
+      "name": "Jennifer Walsh",
+      "position": "Litigation Director",
+      "company": "Coastal Law Firm",
+      "avatar_image": "/assets/img/avatars/te4.webp",
+      "avatar_image2x": "/assets/img/avatars/te4@2x.webp",
+      "quote": "The case intelligence dashboard gives us objective, data-driven insights that have improved our settlement negotiations. Our success rate has increased by 40%.",
+      "ratings": 5,
+      "background_color": "purple",
+      "shadow": "shadow-lg",
+      "rounded": "rounded-xl",
+      "case_study": "/case-studies/coastal-law-firm/",
+      "metrics": "40% better settlement outcomes",
+      "practice_area": "Commercial Litigation"
+    },
+    {
+      "name": "Robert Thompson",
+      "position": "Senior Partner",
+      "company": "Thompson & Associates",
+      "avatar_image": "/assets/img/avatars/te5.webp",
+      "avatar_image2x": "/assets/img/avatars/te5@2x.webp",
+      "quote": "Lapis Legal has given us a competitive edge. Clients are impressed with our efficiency and the depth of our analysis. We're winning more business because of this technology.",
+      "ratings": 5,
+      "background_color": "orange",
+      "shadow": "shadow-lg",
+      "rounded": "rounded-xl",
+      "case_study": "/case-studies/thompson-associates/",
+      "metrics": "50% increase in new client acquisition",
+      "practice_area": "Employment Law"
+    },
+    {
+      "name": "Lisa Park",
+      "position": "Chief Legal Officer",
+      "company": "Global Manufacturing Corp",
+      "avatar_image": "/assets/img/avatars/te6.webp",
+      "avatar_image2x": "/assets/img/avatars/te6@2x.webp",
+      "quote": "The platform has standardized our legal processes across all departments. We've reduced outside counsel dependency by 60% while improving consistency and compliance.",
+      "ratings": 5,
+      "background_color": "teal",
+      "shadow": "shadow-lg",
+      "rounded": "rounded-xl",
+      "case_study": "/case-studies/global-manufacturing/",
+      "metrics": "60% reduction in outside counsel spend",
+      "practice_area": "Corporate Legal"
+    }
+  ],
+  "featured_testimonial": {
+    "name": "Sarah Johnson",
+    "position": "Partner",
+    "company": "Johnson & Associates",
+    "avatar_image": "/assets/img/avatars/te1.webp",
+    "quote": "Lapis Legal AI has completely transformed our document review process. What used to take days now takes hours, with better accuracy.",
+    "full_quote": "Before Lapis Legal, our team spent countless hours on document review, often missing critical information buried in thousands of pages. Now, we can process the same volume in a fraction of the time with confidence that we haven't missed anything important. The AI doesn't just save time—it makes us better lawyers.",
+    "metrics": [
+      { "stat": "75%", "description": "Reduction in document review time" },
+      { "stat": "$200K", "description": "Annual cost savings" },
+      { "stat": "95%", "description": "Client satisfaction rate" }
+    ],
+    "case_study_url": "/case-studies/johnson-associates/"
+  }
+}

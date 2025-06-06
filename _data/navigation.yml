@@ -1,0 +1,209 @@
+# Navigation structure for Lapis Legal AI
+
+# Primary Navigation
+primary:
+  - name: "Features"
+    url: "/features/"
+    type: "mega_menu"
+    mega_menu:
+      categories:
+        - name: "Case Analysis & Intelligence"
+          features:
+            - name: "Case Intelligence Dashboard"
+              url: "/features/case-intelligence-dashboard/"
+              description: "AI-powered case strength assessment"
+            - name: "AI Insights Dashboard"
+              url: "/features/ai-insights-dashboard/"
+              description: "Centralized intelligence hub"
+            - name: "Timeline Analysis"
+              url: "/features/timeline-analysis/"
+              description: "Multi-perspective chronological analysis"
+        
+        - name: "Document Management"
+          features:
+            - name: "Document Viewer"
+              url: "/features/document-viewer/"
+              description: "Unified document interface with AI"
+            - name: "Complaint Analysis Tool"
+              url: "/features/complaint-analysis-tool/"
+              description: "Automated assertion extraction"
+            - name: "Fact Center UI"
+              url: "/features/fact-center-ui/"
+              description: "Centralized knowledge repository"
+        
+        - name: "Deposition & Testimony"
+          features:
+            - name: "Deposition Preparation Assistant"
+              url: "/features/deposition-preparation-assistant/"
+              description: "AI-generated question planning"
+            - name: "Deposition Wizard UI"
+              url: "/features/deposition-wizard-ui/"
+              description: "Complete deposition workflow"
+            - name: "Transcript Analysis Tool"
+              url: "/features/transcript-analysis-tool/"
+              description: "Extract insights from testimony"
+        
+        - name: "Discovery & Evidence"
+          features:
+            - name: "Discovery Copilot"
+              url: "/features/discovery-copilot/"
+              description: "Evidence gap identification"
+            - name: "Enhanced Contradiction Analysis"
+              url: "/features/enhanced-contradiction-analysis/"
+              description: "Detailed conflict investigation"
+            - name: "Exhibit Management UI"
+              url: "/features/exhibit-management-ui/"
+              description: "Strategic exhibit planning"
+      
+      footer_links:
+        - name: "View All Features"
+          url: "/features/"
+          class: "btn btn-primary"
+        - name: "Request Demo"
+          url: "/contact/#demo"
+          class: "btn btn-outline-primary"
+
+  - name: "Solutions"
+    url: "/solutions/"
+    type: "dropdown"
+    dropdown:
+      - name: "For Litigation"
+        url: "/solutions/litigation-support/"
+        description: "Case strategy and trial preparation"
+      - name: "For Corporate Legal"
+        url: "/solutions/corporate-legal/"
+        description: "Cost control and standardization"
+      - name: "For Law Firms"
+        url: "/solutions/law-firm-management/"
+        description: "Competitive advantage and efficiency"
+      - separator: true
+      - name: "View All Solutions"
+        url: "/solutions/"
+        class: "dropdown-header"
+
+  - name: "Resources"
+    url: "/resources/"
+    type: "dropdown"
+    dropdown:
+      - name: "Documentation"
+        url: "/resources/documentation/"
+        description: "API guides and technical docs"
+      - name: "Case Studies"
+        url: "/resources/case-studies/"
+        description: "Customer success stories"
+      - name: "White Papers"
+        url: "/resources/white-papers/"
+        description: "Research and insights"
+      - name: "ROI Calculator"
+        url: "/resources/roi-calculator/"
+        description: "Calculate your potential savings"
+      - separator: true
+      - name: "Blog"
+        url: "/blog/"
+      - name: "Webinars"
+        url: "/resources/webinars/"
+
+  - name: "Pricing"
+    url: "/pricing/"
+    type: "simple"
+
+  - name: "About"
+    url: "/about/"
+    type: "dropdown"
+    dropdown:
+      - name: "Company"
+        url: "/about/"
+        description: "Our mission and story"
+      - name: "Leadership"
+        url: "/about/leadership/"
+        description: "Meet our team"
+      - name: "Security & Compliance"
+        url: "/about/security/"
+        description: "Data protection and certifications"
+      - name: "Contact"
+        url: "/contact/"
+        description: "Get in touch"
+
+# Mobile Navigation (simplified structure)
+mobile:
+  - name: "Features"
+    url: "/features/"
+  - name: "Solutions"
+    url: "/solutions/"
+  - name: "Pricing"
+    url: "/pricing/"
+  - name: "Resources"
+    url: "/resources/"
+  - name: "About"
+    url: "/about/"
+  - name: "Contact"
+    url: "/contact/"
+
+# Footer Navigation
+footer:
+  sections:
+    - title: "Product"
+      links:
+        - name: "Features"
+          url: "/features/"
+        - name: "Solutions"
+          url: "/solutions/"
+        - name: "Pricing"
+          url: "/pricing/"
+        - name: "Documentation"
+          url: "/resources/documentation/"
+        - name: "API Reference"
+          url: "/developers/"
+
+    - title: "Solutions"
+      links:
+        - name: "Litigation Support"
+          url: "/solutions/litigation-support/"
+        - name: "Corporate Legal"
+          url: "/solutions/corporate-legal/"
+        - name: "Law Firm Management"
+          url: "/solutions/law-firm-management/"
+        - name: "Case Studies"
+          url: "/resources/case-studies/"
+
+    - title: "Resources"
+      links:
+        - name: "Blog"
+          url: "/blog/"
+        - name: "White Papers"
+          url: "/resources/white-papers/"
+        - name: "Webinars"
+          url: "/resources/webinars/"
+        - name: "ROI Calculator"
+          url: "/resources/roi-calculator/"
+        - name: "Support"
+          url: "/support/"
+
+    - title: "Company"
+      links:
+        - name: "About"
+          url: "/about/"
+        - name: "Leadership"
+          url: "/about/leadership/"
+        - name: "Careers"
+          url: "/careers/"
+        - name: "Security"
+          url: "/about/security/"
+        - name: "Contact"
+          url: "/contact/"
+
+  bottom:
+    - name: "Privacy Policy"
+      url: "/privacy/"
+    - name: "Terms of Service"
+      url: "/terms/"
+    - name: "Cookie Policy"
+      url: "/cookies/"
+
+# Breadcrumb patterns
+breadcrumbs:
+  features: "Features"
+  solutions: "Solutions"
+  resources: "Resources"
+  blog: "Blog"
+  about: "About"

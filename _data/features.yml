@@ -1,0 +1,253 @@
+# Lapis Legal AI Features Data
+# This file defines all platform features for use across the site
+
+features:
+  - name: "Case Intelligence Dashboard"
+    slug: "case-intelligence-dashboard"
+    category: "Case Analysis"
+    icon: "dashboard"
+    short_description: "Get a comprehensive overview of your case with AI-powered strength assessments and strategic insights."
+    long_description: "The Case Intelligence Dashboard provides a strategic command center for your cases, offering AI-driven evaluation of case strength, identification of key factors, and actionable recommendations based on comprehensive analysis."
+    key_benefits:
+      - "Data-driven case strength assessment with confidence scoring"
+      - "Identification of key case factors and vulnerabilities"
+      - "AI-generated strategic insights and recommendations"
+      - "Automated deadline tracking and case metrics"
+      - "Visual representation for improved client communication"
+    time_savings: "60%"
+    demo_available: true
+    related_features: ["ai-insights-dashboard", "timeline-analysis", "settlement-analysis-tool"]
+
+  - name: "Complaint Analysis Tool"
+    slug: "complaint-analysis-tool"
+    category: "Document Analysis"
+    icon: "document-search"
+    short_description: "Automatically extract claims from legal complaints, categorize assertions, and generate response suggestions."
+    long_description: "Transform how you process legal complaints with automated assertion extraction, intelligent categorization, and AI-powered response suggestions that ensure comprehensive and strategic responses."
+    key_benefits:
+      - "Automatic extraction of assertions from complaints"
+      - "Categorization by type (factual, damages, liability)"
+      - "AI-suggested responses (admit, deny, insufficient knowledge)"
+      - "Contradiction detection with existing evidence"
+      - "Draft answer generation with proper legal formatting"
+    time_savings: "80%"
+    demo_available: true
+    related_features: ["document-viewer", "contradiction-analysis", "ai-insights-dashboard"]
+
+  - name: "Discovery Copilot"
+    slug: "discovery-copilot"
+    category: "Discovery Management"
+    icon: "search-files"
+    short_description: "Streamline the discovery process by identifying evidence gaps and managing requests."
+    long_description: "Advanced discovery management tool that uses AI to identify potential evidence gaps, prioritize discovery efforts, and ensure comprehensive evidence collection throughout the litigation process."
+    key_benefits:
+      - "AI-powered evidence gap identification"
+      - "Automated prioritization based on case impact"
+      - "Comprehensive request management and tracking"
+      - "Case coverage scoring and completeness metrics"
+      - "Integration with document management systems"
+    time_savings: "70%"
+    demo_available: true
+    related_features: ["fact-center-ui", "document-viewer", "case-intelligence-dashboard"]
+
+  - name: "Deposition Preparation Assistant"
+    slug: "deposition-preparation-assistant"
+    category: "Deposition Tools"
+    icon: "clipboard-list"
+    short_description: "Prepare for depositions with AI-generated questions and strategic organization."
+    long_description: "Streamline deposition preparation with AI-powered question generation, strategic organization by topic, and direct integration with case evidence for maximum effectiveness."
+    key_benefits:
+      - "AI-generated questions based on case documents"
+      - "Strategic organization by topic and importance"
+      - "Direct links between questions and supporting evidence"
+      - "Customizable templates for different deposition types"
+      - "Real-time collaboration for team preparation"
+    time_savings: "70%"
+    demo_available: true
+    related_features: ["deposition-wizard-ui", "transcript-analysis-tool", "document-viewer"]
+
+  - name: "Deposition Wizard UI"
+    slug: "deposition-wizard-ui"
+    category: "Deposition Tools"
+    icon: "workflow"
+    short_description: "Your step-by-step guide through the complete deposition process."
+    long_description: "Comprehensive workflow tool that guides legal professionals through the entire deposition process, from initial preparation to post-deposition analysis, ensuring consistent and thorough handling."
+    key_benefits:
+      - "Structured workflow with visual progress tracking"
+      - "Integration with specialized deposition tools"
+      - "AI-generated content and strategic insights"
+      - "Centralized deposition management interface"
+      - "Standardized process templates for consistency"
+    time_savings: "50%"
+    demo_available: true
+    related_features: ["deposition-preparation-assistant", "transcript-analysis-tool", "case-intelligence-dashboard"]
+
+  - name: "Document Viewer"
+    slug: "document-viewer"
+    category: "Document Management"
+    icon: "document-text"
+    short_description: "Organize and access case documents with AI-enhanced analysis capabilities."
+    long_description: "Versatile document management solution that provides a unified interface for reviewing, analyzing, and managing legal documents with integrated AI analysis features."
+    key_benefits:
+      - "Support for multiple document formats"
+      - "Unified interface for all case documents"
+      - "AI-enhanced document understanding and analysis"
+      - "Collaborative annotation and review capabilities"
+      - "Dynamic document loading for performance optimization"
+    time_savings: "40%"
+    demo_available: true
+    related_features: ["exhibit-management-ui", "complaint-analysis-tool", "fact-center-ui"]
+
+  - name: "Exhibit Management UI"
+    slug: "exhibit-management-ui"
+    category: "Trial Preparation"
+    icon: "folder-open"
+    short_description: "Organize and strategically plan the use of exhibits for maximum impact."
+    long_description: "Comprehensive exhibit management solution that helps organize, analyze, and strategically plan exhibit usage with AI-powered analysis for relevance assessment and contradiction detection."
+    key_benefits:
+      - "Centralized exhibit repository with status tracking"
+      - "AI-powered relevance assessment and contradiction detection"
+      - "Strategic planning tools for exhibit usage"
+      - "Flexible tagging system for custom organization"
+      - "Collaborative workflow for team-based management"
+    time_savings: "60%"
+    demo_available: true
+    related_features: ["document-viewer", "contradiction-analysis", "timeline-analysis"]
+
+  - name: "Transcript Analysis Tool"
+    slug: "transcript-analysis-tool"
+    category: "Deposition Tools"
+    icon: "microphone"
+    short_description: "Extract maximum value from testimony with AI-powered transcript analysis."
+    long_description: "Advanced transcript analysis solution that uses AI to identify key statements, contradictions, and strategic insights from deposition and trial testimony."
+    key_benefits:
+      - "Automatic identification of key statements and admissions"
+      - "Cross-referencing with case documents for contradictions"
+      - "Pattern recognition across lengthy transcripts"
+      - "Integration with related evidence and documents"
+      - "AI-powered strategic insight generation"
+    time_savings: "75%"
+    demo_available: true
+    related_features: ["deposition-wizard-ui", "contradiction-analysis", "ai-insights-dashboard"]
+
+  - name: "AI Insights Dashboard"
+    slug: "ai-insights-dashboard"
+    category: "Case Analysis"
+    icon: "lightbulb"
+    short_description: "Centralized hub for AI-generated intelligence and actionable case insights."
+    long_description: "Comprehensive analytics interface that presents AI-generated intelligence from multiple analysis engines, providing prioritized insights, contradictions, and strategic recommendations."
+    key_benefits:
+      - "Centralized intelligence from multiple analysis sources"
+      - "Prioritization algorithm for most impactful insights"
+      - "Real-time updates as new case information becomes available"
+      - "Adaptive learning system based on user feedback"
+      - "Contextual awareness of case type and jurisdiction"
+    time_savings: "65%"
+    demo_available: true
+    related_features: ["case-intelligence-dashboard", "fact-center-ui", "contradiction-analysis"]
+
+  - name: "Fact Center UI"
+    slug: "fact-center-ui"
+    category: "Case Management"
+    icon: "database"
+    short_description: "Centralized repository for case documents and structured facts."
+    long_description: "Knowledge hub that organizes all case information, documents, AI-extracted facts, detected contradictions, and case timelines in a unified, searchable interface."
+    key_benefits:
+      - "AI-powered fact extraction with categorization"
+      - "Automated contradiction detection across sources"
+      - "Dynamic timeline generation from documents"
+      - "Structured organization of unstructured content"
+      - "Source verification linking to original documents"
+    time_savings: "55%"
+    demo_available: true
+    related_features: ["timeline-analysis", "document-viewer", "contradiction-analysis"]
+
+  - name: "Timeline Analysis"
+    slug: "timeline-analysis"
+    category: "Case Analysis"
+    icon: "calendar"
+    short_description: "Visualize case events with multi-perspective chronological analysis."
+    long_description: "Advanced chronological visualization system that presents case events along a dynamic timeline, enabling comparison of different perspectives and identification of contradictions."
+    key_benefits:
+      - "Dynamic visualization with multiple perspective comparison"
+      - "Automated contradiction detection in event timing"
+      - "AI-enhanced analysis of chronological patterns"
+      - "Integrated source verification with document links"
+      - "Comprehensive event context for each timeline entry"
+    time_savings: "50%"
+    demo_available: true
+    related_features: ["fact-center-ui", "contradiction-analysis", "case-intelligence-dashboard"]
+
+  - name: "Settlement Analysis Tool"
+    slug: "settlement-analysis-tool"
+    category: "Case Valuation"
+    icon: "calculator"
+    short_description: "Data-driven case valuation and settlement scenario modeling."
+    long_description: "Comprehensive settlement analysis solution that provides objective case valuation, scenario modeling, and negotiation tracking with data-driven insights for optimal outcomes."
+    key_benefits:
+      - "Data-driven valuation with probability weighting"
+      - "Scenario modeling with financial projections"
+      - "Comparable case analysis for benchmarking"
+      - "Dynamic recalculation as case factors change"
+      - "Comprehensive negotiation history documentation"
+    time_savings: "45%"
+    demo_available: true
+    related_features: ["case-intelligence-dashboard", "ai-insights-dashboard", "timeline-analysis"]
+
+  - name: "Enhanced Contradiction Analysis"
+    slug: "enhanced-contradiction-analysis"
+    category: "Analysis Tools"
+    icon: "exclamation-triangle"
+    short_description: "Detailed visual analysis of conflicting statements with strategic recommendations."
+    long_description: "Specialized interface for analyzing contradictions across case documents and testimony, providing detailed visual comparisons, impact assessment, and strategic follow-up recommendations."
+    key_benefits:
+      - "Focused contradiction investigation with context"
+      - "AI-enhanced evaluation of contradiction severity"
+      - "Strategic guidance through automated question generation"
+      - "Visual clarity for complex textual inconsistencies"
+      - "Prioritization mechanism for significant contradictions"
+    time_savings: "70%"
+    demo_available: true
+    related_features: ["transcript-analysis-tool", "fact-center-ui", "ai-insights-dashboard"]
+
+  - name: "Request Generator & Report Builder"
+    slug: "request-generator-report-builder"
+    category: "Document Generation"
+    icon: "document-duplicate"
+    short_description: "Automated generation of legal requests and comprehensive reports."
+    long_description: "Intelligent document generation system that creates targeted discovery requests, comprehensive case reports, and other legal documents based on case analysis and AI insights."
+    key_benefits:
+      - "Automated discovery request generation based on evidence gaps"
+      - "Comprehensive case report compilation"
+      - "Template-based document creation with customization"
+      - "Integration with case analysis for targeted requests"
+      - "Professional formatting with legal standards compliance"
+    time_savings: "90%"
+    demo_available: true
+    related_features: ["discovery-copilot", "case-intelligence-dashboard", "ai-insights-dashboard"]
+
+# Feature Categories for Navigation
+categories:
+  - name: "Case Analysis"
+    description: "Strategic case assessment and intelligence tools"
+    features: ["case-intelligence-dashboard", "ai-insights-dashboard", "timeline-analysis"]
+  
+  - name: "Document Management"
+    description: "Advanced document processing and analysis"
+    features: ["document-viewer", "complaint-analysis-tool", "fact-center-ui"]
+  
+  - name: "Deposition Tools"
+    description: "Complete deposition workflow management"
+    features: ["deposition-preparation-assistant", "deposition-wizard-ui", "transcript-analysis-tool"]
+  
+  - name: "Discovery Management"
+    description: "Comprehensive discovery and evidence tools"
+    features: ["discovery-copilot", "enhanced-contradiction-analysis"]
+  
+  - name: "Trial Preparation"
+    description: "Strategic trial and exhibit management"
+    features: ["exhibit-management-ui", "settlement-analysis-tool"]
+  
+  - name: "Document Generation"
+    description: "Automated legal document creation"
+    features: ["request-generator-report-builder"]
